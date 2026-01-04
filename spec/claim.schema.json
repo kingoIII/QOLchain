@@ -1,0 +1,99 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://qolchain.org/spec/claim.schema.json",
+  "title": "QOLChain Claim",
+  "description": "Canonical off-chain authorship claim for QOLChain. Immutable once issued.",
+  "type": "object",
+  "required": [
+    "qol_version",
+    "entity_type",
+    "entity_id",
+    "title",
+    "creator",
+    "license",
+    "issued_at",
+    "nonce"
+  ],
+  "additionalProperties": false,
+
+  "properties": {
+    "qol_version": {
+      "type": "string",
+      "const": "0.1.0",
+      "description": "Version of the QOL claim spec."
+    },
+
+    "entity_type": {
+      "type": "string",
+      "const": "song",
+      "description": "Type of creative entity."
+    },
+
+    "entity_id": {
+      "type": "string",
+      "pattern": "^did:qol:song:[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{12}$",
+      "description": "Canonical DID for the song (UUIDv4)."
+    },
+
+    "title": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 256
+    },
+
+    "creator": {
+      "type": "string",
+      "pattern": "^did:qol:creator:[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{12}$",
+      "description": "DID of the claim issuer."
+    },
+
+    "contributors": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["did", "role"],
+        "additionalProperties": false,
+        "properties": {
+          "did": {
+            "type": "string",
+            "pattern": "^did:qol:creator:[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{12}$"
+          },
+          "role": {
+            "type": "string",
+            "enum": ["writer", "producer", "performer", "featured", "remixer", "other"]
+          },
+          "share": {
+            "type": "integer",
+            "minimum": 0,
+            "maximum": 10000,
+            "description": "Revenue share in basis points (10000 = 100%)."
+          }
+        }
+      }
+    },
+
+    "license": {
+      "type": "string",
+      "pattern": "^QOL-(NC-)?[0-9]+\\.[0-9]+$",
+      "examples": ["QOL-1.0", "QOL-NC-1.0"],
+      "description": "QOL license identifier."
+    },
+
+    "issued_at": {
+      "type": "string",
+      "format": "date-time",
+      "description": "RFC 3339 UTC timestamp."
+    },
+
+    "nonce": {
+      "type": "string",
+      "pattern": "^[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{12}$",
+      "description": "UUIDv4 nonce to prevent replay."
+    },
+
+    "description": {
+      "type": ["string", "null"],
+      "maxLength": 2048
+    }
+  }
+}

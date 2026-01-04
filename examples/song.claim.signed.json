@@ -1,0 +1,11 @@
+{
+  "claim_file": "song.claim.json",
+  "claim_hash": "0x...",
+  "signature": {
+    "type": "EcdsaSecp256k1",
+    "created": "2026-01-02T12:01:00Z",
+    "signatureValue": "0x...",
+    "verificationMethod": "did:qol:creator:9a1b5678-2345-4cde-89ab-1234567890ab#keys-1",
+    "algorithm": "eth_sign"
+  }
+}

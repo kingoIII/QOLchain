@@ -1,0 +1,15 @@
+{
+  "qol_version": "0.1.0",
+  "entity_type": "song",
+  "entity_id": "did:qol:song:123e4567-e89b-12d3-a456-426614174000",
+  "title": "Example Song",
+  "creator": "did:qol:creator:9a1b5678-2345-4cde-89ab-1234567890ab",
+  "contributors": [
+    { "did": "did:qol:creator:11111111-2222-3333-4444-555555555555", "role": "writer", "share": 5000 },
+    { "did": "did:qol:creator:66666666-7777-8888-9999-aaaaaaaaaaaa", "role": "performer", "share": 5000 }
+  ],
+  "license": "QOL-1.0",
+  "issued_at": "2026-01-02T12:00:00Z",
+  "nonce": "f47ac10b-58cc-4372-a567-0e02b2c3d479",
+  "description": "A short example claim for the QOLChain spec."
+}
