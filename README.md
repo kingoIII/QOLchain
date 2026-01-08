@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 # QOLchain (Scaffold)
 
 This repository contains a lightweight scaffold for a QOL (Quality of Life) claim system.
