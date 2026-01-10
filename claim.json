@@ -1,0 +1,11 @@
+{
+  "id": "ea1762b0e92bd7c3dfb4815a02a5fbe8b17a8b4b3a901c7fc4e00e9d3bb6a6e5",
+  "type": "attestation",
+  "issuer": "did:qol:issuer",
+  "subject": "Automated test subject",
+  "payload": {
+    "note": "Automated note"
+  },
+  "timestamp": "2026-01-10T15:19:47.179920",
+  "signature": "d2e651b4ce154f0833d01c6936b636e30a1daed5fc99e927876903a4cae599d4"
+}

@@ -817,3 +817,468 @@
 2026-01-10T06:33:30-08:00 [DEBUG] (codacy-cli-v2/config/runtimes-installer.go:107) Using existing runtime download version=3.11.11 downloadPath=/home/guita/.cache/codacy/runtimes/cpython-3.11.11+20250317-x86_64-unknown-linux-gnu-install_only.tar.gz runtime=python
 2026-01-10T06:33:30-08:00 [DEBUG] (codacy-cli-v2/config/runtimes-installer.go:122) Extracting runtime runtime=python version=3.11.11 fileName=cpython-3.11.11+20250317-x86_64-unknown-linux-gnu-install_only.tar.gz extractDirectory=/home/guita/.cache/codacy/runtimes
 2026-01-10T06:33:30-08:00 [ERROR] (codacy-cli-v2/utils/extract.go:100) Failed to extract archive error=EOF
+2026-01-10T06:33:43-08:00 [INFO] (codacy-cli-v2/cli-v2.go:27) Starting Codacy CLI version=1.0.0-main.365.sha.cf4ddcc (cf4ddcc) built at 2025-12-15T14:45:31Z
+2026-01-10T06:33:45-08:00 [INFO] (codacy-cli-v2/cmd/root.go:34) Executing CLI command command=analyze full_command=[/home/guita/.cache/codacy/codacy-cli-v2/1.0.0-main.365.sha.cf4ddcc/codacy-cli-v2 analyze /mnt/d/cache/QOLchain/.git/COMMIT_EDITMSG --format sarif] args=[/mnt/d/cache/QOLchain/.git/COMMIT_EDITMSG]
+2026-01-10T06:33:46-08:00 [DEBUG] (codacy-cli-v2/config/tools-installer.go:114) Installing download-based tool tool=pmd version=7.11.0 downloadURL=https://github.com/pmd/pmd/releases/download/pmd_releases%2F7.11.0/pmd-dist-7.11.0-bin.zip
+2026-01-10T06:33:46-08:00 [DEBUG] (codacy-cli-v2/config/tools-installer.go:280) Using existing tool download tool=pmd version=7.11.0 downloadPath=/home/guita/.cache/codacy/tools/pmd-dist-7.11.0-bin.zip
+2026-01-10T06:33:46-08:00 [DEBUG] (codacy-cli-v2/config/tools-installer.go:301) Extracting tool fileName=pmd-dist-7.11.0-bin.zip extractDirectory=/home/guita/.cache/codacy/tools/pmd@7.11.0 tool=pmd version=7.11.0
+2026-01-10T06:33:46-08:00 [ERROR] (codacy-cli-v2/utils/extract.go:215) Failed to extract zip archive file=/home/guita/.cache/codacy/tools/pmd-dist-7.11.0-bin.zip error=zip: not a valid zip file
+2026-01-10T06:33:46-08:00 [DEBUG] (codacy-cli-v2/config/tools-installer.go:125) Installing Python tool tool=pylint version=3.3.6
+2026-01-10T06:33:46-08:00 [DEBUG] (codacy-cli-v2/config/tools-installer.go:334) Starting Python tool installation tool=pylint version=3.3.6
+2026-01-10T06:33:46-08:00 [DEBUG] (codacy-cli-v2/config/runtimes-installer.go:107) Using existing runtime download runtime=python version=3.11.11 downloadPath=/home/guita/.cache/codacy/runtimes/cpython-3.11.11+20250317-x86_64-unknown-linux-gnu-install_only.tar.gz
+2026-01-10T06:33:46-08:00 [DEBUG] (codacy-cli-v2/config/runtimes-installer.go:122) Extracting runtime fileName=cpython-3.11.11+20250317-x86_64-unknown-linux-gnu-install_only.tar.gz extractDirectory=/home/guita/.cache/codacy/runtimes runtime=python version=3.11.11
+2026-01-10T06:33:46-08:00 [ERROR] (codacy-cli-v2/utils/extract.go:100) Failed to extract archive error=EOF
+2026-01-10T06:33:46-08:00 [DEBUG] (codacy-cli-v2/config/tools-installer.go:134) Installing runtime-based tool tool=revive version=1.7.0 runtime=go
+2026-01-10T06:33:46-08:00 [DEBUG] (codacy-cli-v2/config/runtimes-installer.go:107) Using existing runtime download version=1.22.3 downloadPath=/home/guita/.cache/codacy/runtimes/go1.22.3.linux-amd64.tar.gz runtime=go
+2026-01-10T06:33:46-08:00 [DEBUG] (codacy-cli-v2/config/runtimes-installer.go:122) Extracting runtime runtime=go version=1.22.3 fileName=go1.22.3.linux-amd64.tar.gz extractDirectory=/home/guita/.cache/codacy/runtimes
+2026-01-10T06:33:46-08:00 [ERROR] (codacy-cli-v2/utils/extract.go:100) Failed to extract archive error=EOF
+2026-01-10T06:33:46-08:00 [DEBUG] (codacy-cli-v2/config/tools-installer.go:125) Installing Python tool tool=semgrep version=1.78.0
+2026-01-10T06:33:46-08:00 [DEBUG] (codacy-cli-v2/config/tools-installer.go:334) Starting Python tool installation tool=semgrep version=1.78.0
+2026-01-10T06:33:46-08:00 [DEBUG] (codacy-cli-v2/config/runtimes-installer.go:107) Using existing runtime download runtime=python version=3.11.11 downloadPath=/home/guita/.cache/codacy/runtimes/cpython-3.11.11+20250317-x86_64-unknown-linux-gnu-install_only.tar.gz
+2026-01-10T06:33:46-08:00 [DEBUG] (codacy-cli-v2/config/runtimes-installer.go:122) Extracting runtime extractDirectory=/home/guita/.cache/codacy/runtimes runtime=python version=3.11.11 fileName=cpython-3.11.11+20250317-x86_64-unknown-linux-gnu-install_only.tar.gz
+2026-01-10T06:33:46-08:00 [ERROR] (codacy-cli-v2/utils/extract.go:100) Failed to extract archive error=EOF
+2026-01-10T06:33:46-08:00 [INFO] (codacy-cli-v2/cmd/analyze.go:353) Config file found for tool toolConfigPath=.codacy/tools-configs/trivy.yaml tool=trivy
+2026-01-10T06:33:46-08:00 [DEBUG] (codacy-cli-v2/config/runtimes-installer.go:107) Using existing runtime download runtime=dart version=3.7.2 downloadPath=/home/guita/.cache/codacy/runtimes/dartsdk-linux-x64-release.zip
+2026-01-10T06:33:46-08:00 [DEBUG] (codacy-cli-v2/config/runtimes-installer.go:122) Extracting runtime version=3.7.2 fileName=dartsdk-linux-x64-release.zip extractDirectory=/home/guita/.cache/codacy/runtimes runtime=dart
+2026-01-10T06:33:46-08:00 [ERROR] (codacy-cli-v2/utils/extract.go:215) Failed to extract zip archive file=/home/guita/.cache/codacy/runtimes/dartsdk-linux-x64-release.zip error=zip: not a valid zip file
+2026-01-10T06:33:46-08:00 [DEBUG] (codacy-cli-v2/config/tools-installer.go:134) Installing runtime-based tool version=8.57.0 runtime=node tool=eslint
+2026-01-10T06:33:46-08:00 [DEBUG] (codacy-cli-v2/config/runtimes-installer.go:107) Using existing runtime download downloadPath=/home/guita/.cache/codacy/runtimes/node-v22.2.0-linux-x64.tar.gz runtime=node version=22.2.0
+2026-01-10T06:33:47-08:00 [DEBUG] (codacy-cli-v2/config/runtimes-installer.go:122) Extracting runtime extractDirectory=/home/guita/.cache/codacy/runtimes runtime=node version=22.2.0 fileName=node-v22.2.0-linux-x64.tar.gz
+2026-01-10T06:33:47-08:00 [ERROR] (codacy-cli-v2/utils/extract.go:100) Failed to extract archive error=EOF
+2026-01-10T06:33:47-08:00 [DEBUG] (codacy-cli-v2/config/tools-installer.go:125) Installing Python tool tool=lizard version=1.17.31
+2026-01-10T06:33:47-08:00 [DEBUG] (codacy-cli-v2/config/tools-installer.go:334) Starting Python tool installation version=1.17.31 tool=lizard
+2026-01-10T06:33:47-08:00 [DEBUG] (codacy-cli-v2/config/runtimes-installer.go:107) Using existing runtime download downloadPath=/home/guita/.cache/codacy/runtimes/cpython-3.11.11+20250317-x86_64-unknown-linux-gnu-install_only.tar.gz runtime=python version=3.11.11
+2026-01-10T06:33:47-08:00 [DEBUG] (codacy-cli-v2/config/runtimes-installer.go:122) Extracting runtime runtime=python version=3.11.11 fileName=cpython-3.11.11+20250317-x86_64-unknown-linux-gnu-install_only.tar.gz extractDirectory=/home/guita/.cache/codacy/runtimes
+2026-01-10T06:33:47-08:00 [ERROR] (codacy-cli-v2/utils/extract.go:100) Failed to extract archive error=EOF
+2026-01-10T06:34:03-08:00 [INFO] (codacy-cli-v2/cli-v2.go:27) Starting Codacy CLI version=1.0.0-main.365.sha.cf4ddcc (cf4ddcc) built at 2025-12-15T14:45:31Z
+2026-01-10T06:34:06-08:00 [INFO] (codacy-cli-v2/cmd/root.go:34) Executing CLI command command=analyze full_command=[/home/guita/.cache/codacy/codacy-cli-v2/1.0.0-main.365.sha.cf4ddcc/codacy-cli-v2 analyze /mnt/d/cache/QOLchain/.git/COMMIT_EDITMSG --format sarif] args=[/mnt/d/cache/QOLchain/.git/COMMIT_EDITMSG]
+2026-01-10T06:34:06-08:00 [DEBUG] (codacy-cli-v2/config/tools-installer.go:125) Installing Python tool tool=pylint version=3.3.6
+2026-01-10T06:34:06-08:00 [DEBUG] (codacy-cli-v2/config/tools-installer.go:334) Starting Python tool installation tool=pylint version=3.3.6
+2026-01-10T06:34:06-08:00 [DEBUG] (codacy-cli-v2/config/runtimes-installer.go:107) Using existing runtime download runtime=python version=3.11.11 downloadPath=/home/guita/.cache/codacy/runtimes/cpython-3.11.11+20250317-x86_64-unknown-linux-gnu-install_only.tar.gz
+2026-01-10T06:34:06-08:00 [DEBUG] (codacy-cli-v2/config/runtimes-installer.go:122) Extracting runtime runtime=python version=3.11.11 fileName=cpython-3.11.11+20250317-x86_64-unknown-linux-gnu-install_only.tar.gz extractDirectory=/home/guita/.cache/codacy/runtimes
+2026-01-10T06:34:06-08:00 [ERROR] (codacy-cli-v2/utils/extract.go:100) Failed to extract archive error=EOF
+2026-01-10T06:34:06-08:00 [DEBUG] (codacy-cli-v2/config/tools-installer.go:134) Installing runtime-based tool runtime=go tool=revive version=1.7.0
+2026-01-10T06:34:06-08:00 [DEBUG] (codacy-cli-v2/config/runtimes-installer.go:107) Using existing runtime download runtime=go version=1.22.3 downloadPath=/home/guita/.cache/codacy/runtimes/go1.22.3.linux-amd64.tar.gz
+2026-01-10T06:34:06-08:00 [DEBUG] (codacy-cli-v2/config/runtimes-installer.go:122) Extracting runtime version=1.22.3 fileName=go1.22.3.linux-amd64.tar.gz extractDirectory=/home/guita/.cache/codacy/runtimes runtime=go
+2026-01-10T06:34:06-08:00 [ERROR] (codacy-cli-v2/utils/extract.go:100) Failed to extract archive error=EOF
+2026-01-10T06:34:06-08:00 [DEBUG] (codacy-cli-v2/config/tools-installer.go:125) Installing Python tool tool=semgrep version=1.78.0
+2026-01-10T06:34:06-08:00 [DEBUG] (codacy-cli-v2/config/tools-installer.go:334) Starting Python tool installation version=1.78.0 tool=semgrep
+2026-01-10T06:34:06-08:00 [DEBUG] (codacy-cli-v2/config/runtimes-installer.go:107) Using existing runtime download runtime=python version=3.11.11 downloadPath=/home/guita/.cache/codacy/runtimes/cpython-3.11.11+20250317-x86_64-unknown-linux-gnu-install_only.tar.gz
+2026-01-10T06:34:06-08:00 [DEBUG] (codacy-cli-v2/config/runtimes-installer.go:122) Extracting runtime runtime=python version=3.11.11 fileName=cpython-3.11.11+20250317-x86_64-unknown-linux-gnu-install_only.tar.gz extractDirectory=/home/guita/.cache/codacy/runtimes
+2026-01-10T06:34:06-08:00 [ERROR] (codacy-cli-v2/utils/extract.go:100) Failed to extract archive error=EOF
+2026-01-10T06:34:06-08:00 [INFO] (codacy-cli-v2/cmd/analyze.go:353) Config file found for tool tool=trivy toolConfigPath=.codacy/tools-configs/trivy.yaml
+2026-01-10T06:34:06-08:00 [DEBUG] (codacy-cli-v2/config/runtimes-installer.go:107) Using existing runtime download runtime=dart version=3.7.2 downloadPath=/home/guita/.cache/codacy/runtimes/dartsdk-linux-x64-release.zip
+2026-01-10T06:34:06-08:00 [DEBUG] (codacy-cli-v2/config/runtimes-installer.go:122) Extracting runtime runtime=dart version=3.7.2 fileName=dartsdk-linux-x64-release.zip extractDirectory=/home/guita/.cache/codacy/runtimes
+2026-01-10T06:34:06-08:00 [ERROR] (codacy-cli-v2/utils/extract.go:215) Failed to extract zip archive file=/home/guita/.cache/codacy/runtimes/dartsdk-linux-x64-release.zip error=zip: not a valid zip file
+2026-01-10T06:34:06-08:00 [DEBUG] (codacy-cli-v2/config/tools-installer.go:134) Installing runtime-based tool version=8.57.0 runtime=node tool=eslint
+2026-01-10T06:34:06-08:00 [DEBUG] (codacy-cli-v2/config/runtimes-installer.go:107) Using existing runtime download runtime=node version=22.2.0 downloadPath=/home/guita/.cache/codacy/runtimes/node-v22.2.0-linux-x64.tar.gz
+2026-01-10T06:34:06-08:00 [DEBUG] (codacy-cli-v2/config/runtimes-installer.go:122) Extracting runtime runtime=node version=22.2.0 fileName=node-v22.2.0-linux-x64.tar.gz extractDirectory=/home/guita/.cache/codacy/runtimes
+2026-01-10T06:34:06-08:00 [ERROR] (codacy-cli-v2/utils/extract.go:100) Failed to extract archive error=EOF
+2026-01-10T06:34:06-08:00 [DEBUG] (codacy-cli-v2/config/tools-installer.go:125) Installing Python tool version=1.17.31 tool=lizard
+2026-01-10T06:34:06-08:00 [DEBUG] (codacy-cli-v2/config/tools-installer.go:334) Starting Python tool installation tool=lizard version=1.17.31
+2026-01-10T06:34:06-08:00 [DEBUG] (codacy-cli-v2/config/runtimes-installer.go:107) Using existing runtime download version=3.11.11 downloadPath=/home/guita/.cache/codacy/runtimes/cpython-3.11.11+20250317-x86_64-unknown-linux-gnu-install_only.tar.gz runtime=python
+2026-01-10T06:34:06-08:00 [DEBUG] (codacy-cli-v2/config/runtimes-installer.go:122) Extracting runtime runtime=python version=3.11.11 fileName=cpython-3.11.11+20250317-x86_64-unknown-linux-gnu-install_only.tar.gz extractDirectory=/home/guita/.cache/codacy/runtimes
+2026-01-10T06:34:06-08:00 [ERROR] (codacy-cli-v2/utils/extract.go:100) Failed to extract archive error=EOF
+2026-01-10T06:34:06-08:00 [DEBUG] (codacy-cli-v2/config/tools-installer.go:114) Installing download-based tool tool=pmd version=7.11.0 downloadURL=https://github.com/pmd/pmd/releases/download/pmd_releases%2F7.11.0/pmd-dist-7.11.0-bin.zip
+2026-01-10T06:34:06-08:00 [DEBUG] (codacy-cli-v2/config/tools-installer.go:280) Using existing tool download tool=pmd version=7.11.0 downloadPath=/home/guita/.cache/codacy/tools/pmd-dist-7.11.0-bin.zip
+2026-01-10T06:34:06-08:00 [DEBUG] (codacy-cli-v2/config/tools-installer.go:301) Extracting tool extractDirectory=/home/guita/.cache/codacy/tools/pmd@7.11.0 tool=pmd version=7.11.0 fileName=pmd-dist-7.11.0-bin.zip
+2026-01-10T06:34:06-08:00 [ERROR] (codacy-cli-v2/utils/extract.go:215) Failed to extract zip archive error=zip: not a valid zip file file=/home/guita/.cache/codacy/tools/pmd-dist-7.11.0-bin.zip
+2026-01-10T06:53:38-08:00 [INFO] (codacy-cli-v2/cli-v2.go:27) Starting Codacy CLI version=1.0.0-main.365.sha.cf4ddcc (cf4ddcc) built at 2025-12-15T14:45:31Z
+2026-01-10T06:53:39-08:00 [INFO] (codacy-cli-v2/cmd/root.go:34) Executing CLI command command=update full_command=[/home/guita/.cache/codacy/codacy-cli-v2/1.0.0-main.365.sha.cf4ddcc/codacy-cli-v2 update] args=[]
+2026-01-10T06:53:40-08:00 [INFO] (codacy-cli-v2/cli-v2.go:27) Starting Codacy CLI version=1.0.0-main.365.sha.cf4ddcc (cf4ddcc) built at 2025-12-15T14:45:31Z
+2026-01-10T06:53:41-08:00 [INFO] (codacy-cli-v2/cmd/root.go:34) Executing CLI command command=reset full_command=[/home/guita/.cache/codacy/codacy-cli-v2/1.0.0-main.365.sha.cf4ddcc/codacy-cli-v2 config reset] args=[]
+2026-01-10T06:53:44-08:00 [INFO] (codacy-cli-v2/cli-v2.go:27) Starting Codacy CLI version=1.0.0-main.365.sha.cf4ddcc (cf4ddcc) built at 2025-12-15T14:45:31Z
+2026-01-10T06:53:45-08:00 [INFO] (codacy-cli-v2/cmd/root.go:34) Executing CLI command args=[/mnt/c/Users/guita/AppData/Roaming/Code/User/mcp.json] command=analyze full_command=[/home/guita/.cache/codacy/codacy-cli-v2/1.0.0-main.365.sha.cf4ddcc/codacy-cli-v2 analyze /mnt/c/Users/guita/AppData/Roaming/Code/User/mcp.json --format sarif]
+2026-01-10T06:53:45-08:00 [DEBUG] (codacy-cli-v2/config/tools-installer.go:125) Installing Python tool version=1.78.0 tool=semgrep
+2026-01-10T06:53:45-08:00 [DEBUG] (codacy-cli-v2/config/tools-installer.go:334) Starting Python tool installation tool=semgrep version=1.78.0
+2026-01-10T06:53:45-08:00 [DEBUG] (codacy-cli-v2/config/runtimes-installer.go:107) Using existing runtime download runtime=python version=3.11.11 downloadPath=/home/guita/.cache/codacy/runtimes/cpython-3.11.11+20250317-x86_64-unknown-linux-gnu-install_only.tar.gz
+2026-01-10T06:53:45-08:00 [DEBUG] (codacy-cli-v2/config/runtimes-installer.go:122) Extracting runtime runtime=python version=3.11.11 fileName=cpython-3.11.11+20250317-x86_64-unknown-linux-gnu-install_only.tar.gz extractDirectory=/home/guita/.cache/codacy/runtimes
+2026-01-10T06:53:45-08:00 [ERROR] (codacy-cli-v2/utils/extract.go:100) Failed to extract archive error=EOF
+2026-01-10T06:53:45-08:00 [INFO] (codacy-cli-v2/cmd/analyze.go:353) Config file found for tool tool=trivy toolConfigPath=.codacy/tools-configs/trivy.yaml
+2026-01-10T06:53:45-08:00 [DEBUG] (codacy-cli-v2/config/runtimes-installer.go:107) Using existing runtime download runtime=dart version=3.7.2 downloadPath=/home/guita/.cache/codacy/runtimes/dartsdk-linux-x64-release.zip
+2026-01-10T06:53:45-08:00 [DEBUG] (codacy-cli-v2/config/runtimes-installer.go:122) Extracting runtime runtime=dart version=3.7.2 fileName=dartsdk-linux-x64-release.zip extractDirectory=/home/guita/.cache/codacy/runtimes
+2026-01-10T06:53:45-08:00 [ERROR] (codacy-cli-v2/utils/extract.go:215) Failed to extract zip archive file=/home/guita/.cache/codacy/runtimes/dartsdk-linux-x64-release.zip error=zip: not a valid zip file
+2026-01-10T06:53:45-08:00 [DEBUG] (codacy-cli-v2/config/tools-installer.go:134) Installing runtime-based tool tool=eslint version=8.57.0 runtime=node
+2026-01-10T06:53:45-08:00 [DEBUG] (codacy-cli-v2/config/runtimes-installer.go:107) Using existing runtime download runtime=node version=22.2.0 downloadPath=/home/guita/.cache/codacy/runtimes/node-v22.2.0-linux-x64.tar.gz
+2026-01-10T06:53:45-08:00 [DEBUG] (codacy-cli-v2/config/runtimes-installer.go:122) Extracting runtime fileName=node-v22.2.0-linux-x64.tar.gz extractDirectory=/home/guita/.cache/codacy/runtimes runtime=node version=22.2.0
+2026-01-10T06:53:45-08:00 [ERROR] (codacy-cli-v2/utils/extract.go:100) Failed to extract archive error=EOF
+2026-01-10T06:53:45-08:00 [DEBUG] (codacy-cli-v2/config/tools-installer.go:125) Installing Python tool tool=lizard version=1.17.31
+2026-01-10T06:53:45-08:00 [DEBUG] (codacy-cli-v2/config/tools-installer.go:334) Starting Python tool installation tool=lizard version=1.17.31
+2026-01-10T06:53:45-08:00 [DEBUG] (codacy-cli-v2/config/runtimes-installer.go:107) Using existing runtime download version=3.11.11 downloadPath=/home/guita/.cache/codacy/runtimes/cpython-3.11.11+20250317-x86_64-unknown-linux-gnu-install_only.tar.gz runtime=python
+2026-01-10T06:53:45-08:00 [DEBUG] (codacy-cli-v2/config/runtimes-installer.go:122) Extracting runtime fileName=cpython-3.11.11+20250317-x86_64-unknown-linux-gnu-install_only.tar.gz extractDirectory=/home/guita/.cache/codacy/runtimes runtime=python version=3.11.11
+2026-01-10T06:53:45-08:00 [ERROR] (codacy-cli-v2/utils/extract.go:100) Failed to extract archive error=EOF
+2026-01-10T06:53:45-08:00 [DEBUG] (codacy-cli-v2/config/tools-installer.go:114) Installing download-based tool tool=pmd version=7.11.0 downloadURL=https://github.com/pmd/pmd/releases/download/pmd_releases%2F7.11.0/pmd-dist-7.11.0-bin.zip
+2026-01-10T06:53:45-08:00 [DEBUG] (codacy-cli-v2/config/tools-installer.go:280) Using existing tool download downloadPath=/home/guita/.cache/codacy/tools/pmd-dist-7.11.0-bin.zip tool=pmd version=7.11.0
+2026-01-10T06:53:45-08:00 [DEBUG] (codacy-cli-v2/config/tools-installer.go:301) Extracting tool tool=pmd version=7.11.0 fileName=pmd-dist-7.11.0-bin.zip extractDirectory=/home/guita/.cache/codacy/tools/pmd@7.11.0
+2026-01-10T06:53:45-08:00 [ERROR] (codacy-cli-v2/utils/extract.go:215) Failed to extract zip archive file=/home/guita/.cache/codacy/tools/pmd-dist-7.11.0-bin.zip error=zip: not a valid zip file
+2026-01-10T06:53:45-08:00 [DEBUG] (codacy-cli-v2/config/tools-installer.go:125) Installing Python tool tool=pylint version=3.3.6
+2026-01-10T06:53:45-08:00 [DEBUG] (codacy-cli-v2/config/tools-installer.go:334) Starting Python tool installation tool=pylint version=3.3.6
+2026-01-10T06:53:45-08:00 [DEBUG] (codacy-cli-v2/config/runtimes-installer.go:107) Using existing runtime download runtime=python version=3.11.11 downloadPath=/home/guita/.cache/codacy/runtimes/cpython-3.11.11+20250317-x86_64-unknown-linux-gnu-install_only.tar.gz
+2026-01-10T06:53:45-08:00 [DEBUG] (codacy-cli-v2/config/runtimes-installer.go:122) Extracting runtime version=3.11.11 fileName=cpython-3.11.11+20250317-x86_64-unknown-linux-gnu-install_only.tar.gz extractDirectory=/home/guita/.cache/codacy/runtimes runtime=python
+2026-01-10T06:53:45-08:00 [ERROR] (codacy-cli-v2/utils/extract.go:100) Failed to extract archive error=EOF
+2026-01-10T06:53:45-08:00 [DEBUG] (codacy-cli-v2/config/tools-installer.go:134) Installing runtime-based tool runtime=go tool=revive version=1.7.0
+2026-01-10T06:53:45-08:00 [DEBUG] (codacy-cli-v2/config/runtimes-installer.go:107) Using existing runtime download version=1.22.3 downloadPath=/home/guita/.cache/codacy/runtimes/go1.22.3.linux-amd64.tar.gz runtime=go
+2026-01-10T06:53:45-08:00 [DEBUG] (codacy-cli-v2/config/runtimes-installer.go:122) Extracting runtime extractDirectory=/home/guita/.cache/codacy/runtimes runtime=go version=1.22.3 fileName=go1.22.3.linux-amd64.tar.gz
+2026-01-10T06:53:45-08:00 [ERROR] (codacy-cli-v2/utils/extract.go:100) Failed to extract archive error=EOF
+2026-01-10T06:54:44-08:00 [INFO] (codacy-cli-v2/cli-v2.go:27) Starting Codacy CLI version=1.0.0-main.365.sha.cf4ddcc (cf4ddcc) built at 2025-12-15T14:45:31Z
+2026-01-10T06:54:45-08:00 [INFO] (codacy-cli-v2/cmd/root.go:34) Executing CLI command full_command=[/home/guita/.cache/codacy/codacy-cli-v2/1.0.0-main.365.sha.cf4ddcc/codacy-cli-v2 analyze /mnt/c/Users/guita/AppData/Roaming/Code/User/mcp.json --format sarif] args=[/mnt/c/Users/guita/AppData/Roaming/Code/User/mcp.json] command=analyze
+2026-01-10T06:54:45-08:00 [INFO] (codacy-cli-v2/cmd/analyze.go:353) Config file found for tool toolConfigPath=.codacy/tools-configs/trivy.yaml tool=trivy
+2026-01-10T06:54:56-08:00 [INFO] (codacy-cli-v2/cli-v2.go:27) Starting Codacy CLI version=1.0.0-main.365.sha.cf4ddcc (cf4ddcc) built at 2025-12-15T14:45:31Z
+2026-01-10T06:54:56-08:00 [INFO] (codacy-cli-v2/cmd/root.go:34) Executing CLI command command=analyze full_command=[/home/guita/.cache/codacy/codacy-cli-v2/1.0.0-main.365.sha.cf4ddcc/codacy-cli-v2 analyze /mnt/c/Users/guita/AppData/Roaming/Code/User/mcp.json --format sarif] args=[/mnt/c/Users/guita/AppData/Roaming/Code/User/mcp.json]
+2026-01-10T06:54:56-08:00 [INFO] (codacy-cli-v2/cmd/analyze.go:353) Config file found for tool tool=trivy toolConfigPath=.codacy/tools-configs/trivy.yaml
+2026-01-10T06:56:21-08:00 [INFO] (codacy-cli-v2/cli-v2.go:27) Starting Codacy CLI version=1.0.0-main.365.sha.cf4ddcc (cf4ddcc) built at 2025-12-15T14:45:31Z
+2026-01-10T06:56:22-08:00 [INFO] (codacy-cli-v2/cmd/root.go:34) Executing CLI command full_command=[/home/guita/.cache/codacy/codacy-cli-v2/1.0.0-main.365.sha.cf4ddcc/codacy-cli-v2 analyze /mnt/d/cache/QOLchain/.git/COMMIT_EDITMSG --format sarif] args=[/mnt/d/cache/QOLchain/.git/COMMIT_EDITMSG] command=analyze
+2026-01-10T06:56:22-08:00 [DEBUG] (codacy-cli-v2/config/tools-installer.go:134) Installing runtime-based tool version=1.7.0 runtime=go tool=revive
+2026-01-10T06:56:22-08:00 [DEBUG] (codacy-cli-v2/config/runtimes-installer.go:107) Using existing runtime download runtime=go version=1.22.3 downloadPath=/home/guita/.cache/codacy/runtimes/go1.22.3.linux-amd64.tar.gz
+2026-01-10T06:56:22-08:00 [DEBUG] (codacy-cli-v2/config/runtimes-installer.go:122) Extracting runtime version=1.22.3 fileName=go1.22.3.linux-amd64.tar.gz extractDirectory=/home/guita/.cache/codacy/runtimes runtime=go
+2026-01-10T06:56:22-08:00 [ERROR] (codacy-cli-v2/utils/extract.go:100) Failed to extract archive error=EOF
+2026-01-10T06:56:22-08:00 [DEBUG] (codacy-cli-v2/config/tools-installer.go:125) Installing Python tool version=1.78.0 tool=semgrep
+2026-01-10T06:56:22-08:00 [DEBUG] (codacy-cli-v2/config/tools-installer.go:334) Starting Python tool installation tool=semgrep version=1.78.0
+2026-01-10T06:56:22-08:00 [DEBUG] (codacy-cli-v2/config/runtimes-installer.go:107) Using existing runtime download downloadPath=/home/guita/.cache/codacy/runtimes/cpython-3.11.11+20250317-x86_64-unknown-linux-gnu-install_only.tar.gz runtime=python version=3.11.11
+2026-01-10T06:56:22-08:00 [DEBUG] (codacy-cli-v2/config/runtimes-installer.go:122) Extracting runtime runtime=python version=3.11.11 fileName=cpython-3.11.11+20250317-x86_64-unknown-linux-gnu-install_only.tar.gz extractDirectory=/home/guita/.cache/codacy/runtimes
+2026-01-10T06:56:22-08:00 [ERROR] (codacy-cli-v2/utils/extract.go:100) Failed to extract archive error=EOF
+2026-01-10T06:56:22-08:00 [INFO] (codacy-cli-v2/cmd/analyze.go:353) Config file found for tool tool=trivy toolConfigPath=.codacy/tools-configs/trivy.yaml
+2026-01-10T06:56:22-08:00 [DEBUG] (codacy-cli-v2/config/runtimes-installer.go:107) Using existing runtime download runtime=dart version=3.7.2 downloadPath=/home/guita/.cache/codacy/runtimes/dartsdk-linux-x64-release.zip
+2026-01-10T06:56:22-08:00 [DEBUG] (codacy-cli-v2/config/runtimes-installer.go:122) Extracting runtime runtime=dart version=3.7.2 fileName=dartsdk-linux-x64-release.zip extractDirectory=/home/guita/.cache/codacy/runtimes
+2026-01-10T06:56:22-08:00 [ERROR] (codacy-cli-v2/utils/extract.go:215) Failed to extract zip archive file=/home/guita/.cache/codacy/runtimes/dartsdk-linux-x64-release.zip error=zip: not a valid zip file
+2026-01-10T06:56:22-08:00 [DEBUG] (codacy-cli-v2/config/tools-installer.go:134) Installing runtime-based tool tool=eslint version=8.57.0 runtime=node
+2026-01-10T06:56:22-08:00 [DEBUG] (codacy-cli-v2/config/runtimes-installer.go:107) Using existing runtime download downloadPath=/home/guita/.cache/codacy/runtimes/node-v22.2.0-linux-x64.tar.gz runtime=node version=22.2.0
+2026-01-10T06:56:22-08:00 [DEBUG] (codacy-cli-v2/config/runtimes-installer.go:122) Extracting runtime runtime=node version=22.2.0 fileName=node-v22.2.0-linux-x64.tar.gz extractDirectory=/home/guita/.cache/codacy/runtimes
+2026-01-10T06:56:22-08:00 [ERROR] (codacy-cli-v2/utils/extract.go:100) Failed to extract archive error=EOF
+2026-01-10T06:56:22-08:00 [DEBUG] (codacy-cli-v2/config/tools-installer.go:125) Installing Python tool tool=lizard version=1.17.31
+2026-01-10T06:56:22-08:00 [DEBUG] (codacy-cli-v2/config/tools-installer.go:334) Starting Python tool installation tool=lizard version=1.17.31
+2026-01-10T06:56:22-08:00 [DEBUG] (codacy-cli-v2/config/runtimes-installer.go:107) Using existing runtime download runtime=python version=3.11.11 downloadPath=/home/guita/.cache/codacy/runtimes/cpython-3.11.11+20250317-x86_64-unknown-linux-gnu-install_only.tar.gz
+2026-01-10T06:56:22-08:00 [DEBUG] (codacy-cli-v2/config/runtimes-installer.go:122) Extracting runtime runtime=python version=3.11.11 fileName=cpython-3.11.11+20250317-x86_64-unknown-linux-gnu-install_only.tar.gz extractDirectory=/home/guita/.cache/codacy/runtimes
+2026-01-10T06:56:22-08:00 [ERROR] (codacy-cli-v2/utils/extract.go:100) Failed to extract archive error=EOF
+2026-01-10T06:56:22-08:00 [DEBUG] (codacy-cli-v2/config/tools-installer.go:114) Installing download-based tool tool=pmd version=7.11.0 downloadURL=https://github.com/pmd/pmd/releases/download/pmd_releases%2F7.11.0/pmd-dist-7.11.0-bin.zip
+2026-01-10T06:56:22-08:00 [DEBUG] (codacy-cli-v2/config/tools-installer.go:280) Using existing tool download version=7.11.0 downloadPath=/home/guita/.cache/codacy/tools/pmd-dist-7.11.0-bin.zip tool=pmd
+2026-01-10T06:56:22-08:00 [DEBUG] (codacy-cli-v2/config/tools-installer.go:301) Extracting tool fileName=pmd-dist-7.11.0-bin.zip extractDirectory=/home/guita/.cache/codacy/tools/pmd@7.11.0 tool=pmd version=7.11.0
+2026-01-10T06:56:22-08:00 [ERROR] (codacy-cli-v2/utils/extract.go:215) Failed to extract zip archive file=/home/guita/.cache/codacy/tools/pmd-dist-7.11.0-bin.zip error=zip: not a valid zip file
+2026-01-10T06:56:22-08:00 [DEBUG] (codacy-cli-v2/config/tools-installer.go:125) Installing Python tool tool=pylint version=3.3.6
+2026-01-10T06:56:22-08:00 [DEBUG] (codacy-cli-v2/config/tools-installer.go:334) Starting Python tool installation tool=pylint version=3.3.6
+2026-01-10T06:56:22-08:00 [DEBUG] (codacy-cli-v2/config/runtimes-installer.go:107) Using existing runtime download downloadPath=/home/guita/.cache/codacy/runtimes/cpython-3.11.11+20250317-x86_64-unknown-linux-gnu-install_only.tar.gz runtime=python version=3.11.11
+2026-01-10T06:56:22-08:00 [DEBUG] (codacy-cli-v2/config/runtimes-installer.go:122) Extracting runtime runtime=python version=3.11.11 fileName=cpython-3.11.11+20250317-x86_64-unknown-linux-gnu-install_only.tar.gz extractDirectory=/home/guita/.cache/codacy/runtimes
+2026-01-10T06:56:22-08:00 [ERROR] (codacy-cli-v2/utils/extract.go:100) Failed to extract archive error=EOF
+2026-01-10T06:56:40-08:00 [INFO] (codacy-cli-v2/cli-v2.go:27) Starting Codacy CLI version=1.0.0-main.365.sha.cf4ddcc (cf4ddcc) built at 2025-12-15T14:45:31Z
+2026-01-10T06:56:40-08:00 [INFO] (codacy-cli-v2/cmd/root.go:34) Executing CLI command command=analyze full_command=[/home/guita/.cache/codacy/codacy-cli-v2/1.0.0-main.365.sha.cf4ddcc/codacy-cli-v2 analyze /mnt/d/cache/QOLchain/qolchain/canonical.py --format sarif] args=[/mnt/d/cache/QOLchain/qolchain/canonical.py]
+2026-01-10T06:56:41-08:00 [DEBUG] (codacy-cli-v2/config/tools-installer.go:125) Installing Python tool tool=pylint version=3.3.6
+2026-01-10T06:56:41-08:00 [DEBUG] (codacy-cli-v2/config/tools-installer.go:334) Starting Python tool installation version=3.3.6 tool=pylint
+2026-01-10T06:56:41-08:00 [DEBUG] (codacy-cli-v2/config/runtimes-installer.go:107) Using existing runtime download runtime=python version=3.11.11 downloadPath=/home/guita/.cache/codacy/runtimes/cpython-3.11.11+20250317-x86_64-unknown-linux-gnu-install_only.tar.gz
+2026-01-10T06:56:41-08:00 [DEBUG] (codacy-cli-v2/config/runtimes-installer.go:122) Extracting runtime runtime=python version=3.11.11 fileName=cpython-3.11.11+20250317-x86_64-unknown-linux-gnu-install_only.tar.gz extractDirectory=/home/guita/.cache/codacy/runtimes
+2026-01-10T06:56:42-08:00 [ERROR] (codacy-cli-v2/utils/extract.go:100) Failed to extract archive error=EOF
+2026-01-10T06:56:42-08:00 [DEBUG] (codacy-cli-v2/config/tools-installer.go:125) Installing Python tool tool=semgrep version=1.78.0
+2026-01-10T06:56:42-08:00 [DEBUG] (codacy-cli-v2/config/tools-installer.go:334) Starting Python tool installation tool=semgrep version=1.78.0
+2026-01-10T06:56:42-08:00 [DEBUG] (codacy-cli-v2/config/runtimes-installer.go:107) Using existing runtime download version=3.11.11 downloadPath=/home/guita/.cache/codacy/runtimes/cpython-3.11.11+20250317-x86_64-unknown-linux-gnu-install_only.tar.gz runtime=python
+2026-01-10T06:56:42-08:00 [DEBUG] (codacy-cli-v2/config/runtimes-installer.go:122) Extracting runtime runtime=python version=3.11.11 fileName=cpython-3.11.11+20250317-x86_64-unknown-linux-gnu-install_only.tar.gz extractDirectory=/home/guita/.cache/codacy/runtimes
+2026-01-10T06:56:42-08:00 [ERROR] (codacy-cli-v2/utils/extract.go:100) Failed to extract archive error=EOF
+2026-01-10T06:56:42-08:00 [INFO] (codacy-cli-v2/cmd/analyze.go:353) Config file found for tool tool=trivy toolConfigPath=.codacy/tools-configs/trivy.yaml
+2026-01-10T06:56:42-08:00 [DEBUG] (codacy-cli-v2/config/tools-installer.go:125) Installing Python tool tool=lizard version=1.17.31
+2026-01-10T06:56:42-08:00 [DEBUG] (codacy-cli-v2/config/tools-installer.go:334) Starting Python tool installation tool=lizard version=1.17.31
+2026-01-10T06:56:42-08:00 [DEBUG] (codacy-cli-v2/config/runtimes-installer.go:107) Using existing runtime download runtime=python version=3.11.11 downloadPath=/home/guita/.cache/codacy/runtimes/cpython-3.11.11+20250317-x86_64-unknown-linux-gnu-install_only.tar.gz
+2026-01-10T06:56:42-08:00 [DEBUG] (codacy-cli-v2/config/runtimes-installer.go:122) Extracting runtime version=3.11.11 fileName=cpython-3.11.11+20250317-x86_64-unknown-linux-gnu-install_only.tar.gz extractDirectory=/home/guita/.cache/codacy/runtimes runtime=python
+2026-01-10T06:56:42-08:00 [ERROR] (codacy-cli-v2/utils/extract.go:100) Failed to extract archive error=EOF
+2026-01-10T06:56:47-08:00 [INFO] (codacy-cli-v2/cli-v2.go:27) Starting Codacy CLI version=1.0.0-main.365.sha.cf4ddcc (cf4ddcc) built at 2025-12-15T14:45:31Z
+2026-01-10T06:56:47-08:00 [INFO] (codacy-cli-v2/cmd/root.go:34) Executing CLI command command=analyze full_command=[/home/guita/.cache/codacy/codacy-cli-v2/1.0.0-main.365.sha.cf4ddcc/codacy-cli-v2 analyze /mnt/c/Users/guita/AppData/Roaming/Code/User/mcp.json --format sarif] args=[/mnt/c/Users/guita/AppData/Roaming/Code/User/mcp.json]
+2026-01-10T06:56:48-08:00 [INFO] (codacy-cli-v2/cmd/analyze.go:353) Config file found for tool toolConfigPath=.codacy/tools-configs/trivy.yaml tool=trivy
+2026-01-10T06:56:50-08:00 [INFO] (codacy-cli-v2/cli-v2.go:27) Starting Codacy CLI version=1.0.0-main.365.sha.cf4ddcc (cf4ddcc) built at 2025-12-15T14:45:31Z
+2026-01-10T06:56:51-08:00 [INFO] (codacy-cli-v2/cmd/root.go:34) Executing CLI command command=analyze full_command=[/home/guita/.cache/codacy/codacy-cli-v2/1.0.0-main.365.sha.cf4ddcc/codacy-cli-v2 analyze /mnt/c/Users/guita/AppData/Roaming/Code/User/mcp.json --format sarif] args=[/mnt/c/Users/guita/AppData/Roaming/Code/User/mcp.json]
+2026-01-10T06:56:51-08:00 [INFO] (codacy-cli-v2/cmd/analyze.go:353) Config file found for tool tool=trivy toolConfigPath=.codacy/tools-configs/trivy.yaml
+2026-01-10T06:56:53-08:00 [INFO] (codacy-cli-v2/cli-v2.go:27) Starting Codacy CLI version=1.0.0-main.365.sha.cf4ddcc (cf4ddcc) built at 2025-12-15T14:45:31Z
+2026-01-10T06:56:54-08:00 [INFO] (codacy-cli-v2/cmd/root.go:34) Executing CLI command command=analyze full_command=[/home/guita/.cache/codacy/codacy-cli-v2/1.0.0-main.365.sha.cf4ddcc/codacy-cli-v2 analyze /mnt/d/cache/QOLchain/examples/song.claim.signed.json --format sarif] args=[/mnt/d/cache/QOLchain/examples/song.claim.signed.json]
+2026-01-10T06:56:54-08:00 [INFO] (codacy-cli-v2/cmd/analyze.go:353) Config file found for tool toolConfigPath=.codacy/tools-configs/trivy.yaml tool=trivy
+2026-01-10T06:57:44-08:00 [INFO] (codacy-cli-v2/cli-v2.go:27) Starting Codacy CLI version=1.0.0-main.365.sha.cf4ddcc (cf4ddcc) built at 2025-12-15T14:45:31Z
+2026-01-10T06:57:46-08:00 [INFO] (codacy-cli-v2/cmd/root.go:34) Executing CLI command args=[/mnt/d/cache/QOLchain/qolchain/verify.py] command=analyze full_command=[/home/guita/.cache/codacy/codacy-cli-v2/1.0.0-main.365.sha.cf4ddcc/codacy-cli-v2 analyze /mnt/d/cache/QOLchain/qolchain/verify.py --format sarif]
+2026-01-10T06:57:46-08:00 [DEBUG] (codacy-cli-v2/config/tools-installer.go:125) Installing Python tool tool=lizard version=1.17.31
+2026-01-10T06:57:46-08:00 [DEBUG] (codacy-cli-v2/config/tools-installer.go:334) Starting Python tool installation version=1.17.31 tool=lizard
+2026-01-10T06:57:46-08:00 [DEBUG] (codacy-cli-v2/config/runtimes-installer.go:107) Using existing runtime download runtime=python version=3.11.11 downloadPath=/home/guita/.cache/codacy/runtimes/cpython-3.11.11+20250317-x86_64-unknown-linux-gnu-install_only.tar.gz
+2026-01-10T06:57:46-08:00 [DEBUG] (codacy-cli-v2/config/runtimes-installer.go:122) Extracting runtime extractDirectory=/home/guita/.cache/codacy/runtimes runtime=python version=3.11.11 fileName=cpython-3.11.11+20250317-x86_64-unknown-linux-gnu-install_only.tar.gz
+2026-01-10T06:57:46-08:00 [ERROR] (codacy-cli-v2/utils/extract.go:100) Failed to extract archive error=EOF
+2026-01-10T06:57:46-08:00 [DEBUG] (codacy-cli-v2/config/tools-installer.go:125) Installing Python tool tool=pylint version=3.3.6
+2026-01-10T06:57:46-08:00 [DEBUG] (codacy-cli-v2/config/tools-installer.go:334) Starting Python tool installation version=3.3.6 tool=pylint
+2026-01-10T06:57:46-08:00 [DEBUG] (codacy-cli-v2/config/runtimes-installer.go:107) Using existing runtime download runtime=python version=3.11.11 downloadPath=/home/guita/.cache/codacy/runtimes/cpython-3.11.11+20250317-x86_64-unknown-linux-gnu-install_only.tar.gz
+2026-01-10T06:57:46-08:00 [DEBUG] (codacy-cli-v2/config/runtimes-installer.go:122) Extracting runtime version=3.11.11 fileName=cpython-3.11.11+20250317-x86_64-unknown-linux-gnu-install_only.tar.gz extractDirectory=/home/guita/.cache/codacy/runtimes runtime=python
+2026-01-10T06:57:46-08:00 [ERROR] (codacy-cli-v2/utils/extract.go:100) Failed to extract archive error=EOF
+2026-01-10T06:57:46-08:00 [DEBUG] (codacy-cli-v2/config/tools-installer.go:125) Installing Python tool tool=semgrep version=1.78.0
+2026-01-10T06:57:46-08:00 [DEBUG] (codacy-cli-v2/config/tools-installer.go:334) Starting Python tool installation tool=semgrep version=1.78.0
+2026-01-10T06:57:46-08:00 [DEBUG] (codacy-cli-v2/config/runtimes-installer.go:107) Using existing runtime download version=3.11.11 downloadPath=/home/guita/.cache/codacy/runtimes/cpython-3.11.11+20250317-x86_64-unknown-linux-gnu-install_only.tar.gz runtime=python
+2026-01-10T06:57:46-08:00 [DEBUG] (codacy-cli-v2/config/runtimes-installer.go:122) Extracting runtime extractDirectory=/home/guita/.cache/codacy/runtimes runtime=python version=3.11.11 fileName=cpython-3.11.11+20250317-x86_64-unknown-linux-gnu-install_only.tar.gz
+2026-01-10T06:57:46-08:00 [ERROR] (codacy-cli-v2/utils/extract.go:100) Failed to extract archive error=EOF
+2026-01-10T06:57:46-08:00 [INFO] (codacy-cli-v2/cmd/analyze.go:353) Config file found for tool toolConfigPath=.codacy/tools-configs/trivy.yaml tool=trivy
+2026-01-10T06:57:58-08:00 [INFO] (codacy-cli-v2/cli-v2.go:27) Starting Codacy CLI version=1.0.0-main.365.sha.cf4ddcc (cf4ddcc) built at 2025-12-15T14:45:31Z
+2026-01-10T06:57:58-08:00 [INFO] (codacy-cli-v2/cmd/root.go:34) Executing CLI command args=[qolchain/verify.py] command=analyze full_command=[/home/guita/.cache/codacy/codacy-cli-v2/1.0.0-main.365.sha.cf4ddcc/codacy-cli-v2 analyze qolchain/verify.py --format sarif]
+2026-01-10T06:57:58-08:00 [DEBUG] (codacy-cli-v2/config/tools-installer.go:125) Installing Python tool tool=pylint version=3.3.6
+2026-01-10T06:57:58-08:00 [DEBUG] (codacy-cli-v2/config/tools-installer.go:334) Starting Python tool installation tool=pylint version=3.3.6
+2026-01-10T06:57:58-08:00 [DEBUG] (codacy-cli-v2/config/runtimes-installer.go:107) Using existing runtime download downloadPath=/home/guita/.cache/codacy/runtimes/cpython-3.11.11+20250317-x86_64-unknown-linux-gnu-install_only.tar.gz runtime=python version=3.11.11
+2026-01-10T06:57:58-08:00 [DEBUG] (codacy-cli-v2/config/runtimes-installer.go:122) Extracting runtime runtime=python version=3.11.11 fileName=cpython-3.11.11+20250317-x86_64-unknown-linux-gnu-install_only.tar.gz extractDirectory=/home/guita/.cache/codacy/runtimes
+2026-01-10T06:57:58-08:00 [ERROR] (codacy-cli-v2/utils/extract.go:100) Failed to extract archive error=EOF
+2026-01-10T06:57:58-08:00 [DEBUG] (codacy-cli-v2/config/tools-installer.go:125) Installing Python tool version=1.78.0 tool=semgrep
+2026-01-10T06:57:58-08:00 [DEBUG] (codacy-cli-v2/config/tools-installer.go:334) Starting Python tool installation tool=semgrep version=1.78.0
+2026-01-10T06:57:58-08:00 [DEBUG] (codacy-cli-v2/config/runtimes-installer.go:107) Using existing runtime download runtime=python version=3.11.11 downloadPath=/home/guita/.cache/codacy/runtimes/cpython-3.11.11+20250317-x86_64-unknown-linux-gnu-install_only.tar.gz
+2026-01-10T06:57:58-08:00 [DEBUG] (codacy-cli-v2/config/runtimes-installer.go:122) Extracting runtime extractDirectory=/home/guita/.cache/codacy/runtimes runtime=python version=3.11.11 fileName=cpython-3.11.11+20250317-x86_64-unknown-linux-gnu-install_only.tar.gz
+2026-01-10T06:57:58-08:00 [ERROR] (codacy-cli-v2/utils/extract.go:100) Failed to extract archive error=EOF
+2026-01-10T06:57:58-08:00 [INFO] (codacy-cli-v2/cmd/analyze.go:353) Config file found for tool tool=trivy toolConfigPath=.codacy/tools-configs/trivy.yaml
+2026-01-10T06:57:58-08:00 [DEBUG] (codacy-cli-v2/config/tools-installer.go:125) Installing Python tool tool=lizard version=1.17.31
+2026-01-10T06:57:58-08:00 [DEBUG] (codacy-cli-v2/config/tools-installer.go:334) Starting Python tool installation tool=lizard version=1.17.31
+2026-01-10T06:57:58-08:00 [DEBUG] (codacy-cli-v2/config/runtimes-installer.go:107) Using existing runtime download runtime=python version=3.11.11 downloadPath=/home/guita/.cache/codacy/runtimes/cpython-3.11.11+20250317-x86_64-unknown-linux-gnu-install_only.tar.gz
+2026-01-10T06:57:58-08:00 [DEBUG] (codacy-cli-v2/config/runtimes-installer.go:122) Extracting runtime runtime=python version=3.11.11 fileName=cpython-3.11.11+20250317-x86_64-unknown-linux-gnu-install_only.tar.gz extractDirectory=/home/guita/.cache/codacy/runtimes
+2026-01-10T06:57:58-08:00 [ERROR] (codacy-cli-v2/utils/extract.go:100) Failed to extract archive error=EOF
+2026-01-10T06:58:00-08:00 [INFO] (codacy-cli-v2/cli-v2.go:27) Starting Codacy CLI version=1.0.0-main.365.sha.cf4ddcc (cf4ddcc) built at 2025-12-15T14:45:31Z
+2026-01-10T06:58:00-08:00 [INFO] (codacy-cli-v2/cmd/root.go:34) Executing CLI command full_command=[/home/guita/.cache/codacy/codacy-cli-v2/1.0.0-main.365.sha.cf4ddcc/codacy-cli-v2 analyze /mnt/d/cache/QOLchain/qolchain/verify.py --format sarif] args=[/mnt/d/cache/QOLchain/qolchain/verify.py] command=analyze
+2026-01-10T06:58:01-08:00 [DEBUG] (codacy-cli-v2/config/tools-installer.go:125) Installing Python tool tool=pylint version=3.3.6
+2026-01-10T06:58:01-08:00 [DEBUG] (codacy-cli-v2/config/tools-installer.go:334) Starting Python tool installation tool=pylint version=3.3.6
+2026-01-10T06:58:01-08:00 [DEBUG] (codacy-cli-v2/config/runtimes-installer.go:107) Using existing runtime download version=3.11.11 downloadPath=/home/guita/.cache/codacy/runtimes/cpython-3.11.11+20250317-x86_64-unknown-linux-gnu-install_only.tar.gz runtime=python
+2026-01-10T06:58:01-08:00 [DEBUG] (codacy-cli-v2/config/runtimes-installer.go:122) Extracting runtime runtime=python version=3.11.11 fileName=cpython-3.11.11+20250317-x86_64-unknown-linux-gnu-install_only.tar.gz extractDirectory=/home/guita/.cache/codacy/runtimes
+2026-01-10T06:58:01-08:00 [ERROR] (codacy-cli-v2/utils/extract.go:100) Failed to extract archive error=EOF
+2026-01-10T06:58:01-08:00 [DEBUG] (codacy-cli-v2/config/tools-installer.go:125) Installing Python tool version=1.78.0 tool=semgrep
+2026-01-10T06:58:01-08:00 [DEBUG] (codacy-cli-v2/config/tools-installer.go:334) Starting Python tool installation tool=semgrep version=1.78.0
+2026-01-10T06:58:01-08:00 [DEBUG] (codacy-cli-v2/config/runtimes-installer.go:107) Using existing runtime download downloadPath=/home/guita/.cache/codacy/runtimes/cpython-3.11.11+20250317-x86_64-unknown-linux-gnu-install_only.tar.gz runtime=python version=3.11.11
+2026-01-10T06:58:01-08:00 [DEBUG] (codacy-cli-v2/config/runtimes-installer.go:122) Extracting runtime runtime=python version=3.11.11 fileName=cpython-3.11.11+20250317-x86_64-unknown-linux-gnu-install_only.tar.gz extractDirectory=/home/guita/.cache/codacy/runtimes
+2026-01-10T06:58:01-08:00 [ERROR] (codacy-cli-v2/utils/extract.go:100) Failed to extract archive error=EOF
+2026-01-10T06:58:01-08:00 [INFO] (codacy-cli-v2/cmd/analyze.go:353) Config file found for tool tool=trivy toolConfigPath=.codacy/tools-configs/trivy.yaml
+2026-01-10T06:58:01-08:00 [DEBUG] (codacy-cli-v2/config/tools-installer.go:125) Installing Python tool tool=lizard version=1.17.31
+2026-01-10T06:58:01-08:00 [DEBUG] (codacy-cli-v2/config/tools-installer.go:334) Starting Python tool installation tool=lizard version=1.17.31
+2026-01-10T06:58:01-08:00 [DEBUG] (codacy-cli-v2/config/runtimes-installer.go:107) Using existing runtime download version=3.11.11 downloadPath=/home/guita/.cache/codacy/runtimes/cpython-3.11.11+20250317-x86_64-unknown-linux-gnu-install_only.tar.gz runtime=python
+2026-01-10T06:58:01-08:00 [DEBUG] (codacy-cli-v2/config/runtimes-installer.go:122) Extracting runtime runtime=python version=3.11.11 fileName=cpython-3.11.11+20250317-x86_64-unknown-linux-gnu-install_only.tar.gz extractDirectory=/home/guita/.cache/codacy/runtimes
+2026-01-10T06:58:01-08:00 [ERROR] (codacy-cli-v2/utils/extract.go:100) Failed to extract archive error=EOF
+2026-01-10T06:58:20-08:00 [INFO] (codacy-cli-v2/cli-v2.go:27) Starting Codacy CLI version=1.0.0-main.365.sha.cf4ddcc (cf4ddcc) built at 2025-12-15T14:45:31Z
+2026-01-10T06:58:21-08:00 [INFO] (codacy-cli-v2/cmd/root.go:34) Executing CLI command args=[/mnt/d/cache/QOLchain/examples/song.claim.signed.json] command=analyze full_command=[/home/guita/.cache/codacy/codacy-cli-v2/1.0.0-main.365.sha.cf4ddcc/codacy-cli-v2 analyze /mnt/d/cache/QOLchain/examples/song.claim.signed.json --format sarif]
+2026-01-10T06:58:21-08:00 [INFO] (codacy-cli-v2/cmd/analyze.go:353) Config file found for tool tool=trivy toolConfigPath=.codacy/tools-configs/trivy.yaml
+2026-01-10T06:58:26-08:00 [INFO] (codacy-cli-v2/cli-v2.go:27) Starting Codacy CLI version=1.0.0-main.365.sha.cf4ddcc (cf4ddcc) built at 2025-12-15T14:45:31Z
+2026-01-10T06:58:26-08:00 [INFO] (codacy-cli-v2/cmd/root.go:34) Executing CLI command args=[/mnt/d/cache/QOLchain/examples/song.claim.signed.json] command=analyze full_command=[/home/guita/.cache/codacy/codacy-cli-v2/1.0.0-main.365.sha.cf4ddcc/codacy-cli-v2 analyze /mnt/d/cache/QOLchain/examples/song.claim.signed.json --format sarif]
+2026-01-10T06:58:26-08:00 [INFO] (codacy-cli-v2/cmd/analyze.go:353) Config file found for tool tool=trivy toolConfigPath=.codacy/tools-configs/trivy.yaml
+2026-01-10T06:58:27-08:00 [INFO] (codacy-cli-v2/cli-v2.go:27) Starting Codacy CLI version=1.0.0-main.365.sha.cf4ddcc (cf4ddcc) built at 2025-12-15T14:45:31Z
+2026-01-10T06:58:27-08:00 [INFO] (codacy-cli-v2/cmd/root.go:34) Executing CLI command command=analyze full_command=[/home/guita/.cache/codacy/codacy-cli-v2/1.0.0-main.365.sha.cf4ddcc/codacy-cli-v2 analyze examples/song.claim.signed.json --format sarif] args=[examples/song.claim.signed.json]
+2026-01-10T06:58:27-08:00 [INFO] (codacy-cli-v2/cmd/analyze.go:353) Config file found for tool tool=trivy toolConfigPath=.codacy/tools-configs/trivy.yaml
+2026-01-10T07:05:38-08:00 [INFO] (codacy-cli-v2/cli-v2.go:27) Starting Codacy CLI version=1.0.0-main.365.sha.cf4ddcc (cf4ddcc) built at 2025-12-15T14:45:31Z
+2026-01-10T07:05:38-08:00 [INFO] (codacy-cli-v2/cmd/root.go:34) Executing CLI command full_command=[/home/guita/.cache/codacy/codacy-cli-v2/1.0.0-main.365.sha.cf4ddcc/codacy-cli-v2 analyze /mnt/d/cache/QOLchain/.git/COMMIT_EDITMSG --format sarif] args=[/mnt/d/cache/QOLchain/.git/COMMIT_EDITMSG] command=analyze
+2026-01-10T07:05:38-08:00 [DEBUG] (codacy-cli-v2/config/tools-installer.go:125) Installing Python tool tool=semgrep version=1.78.0
+2026-01-10T07:05:38-08:00 [DEBUG] (codacy-cli-v2/config/tools-installer.go:334) Starting Python tool installation tool=semgrep version=1.78.0
+2026-01-10T07:05:38-08:00 [DEBUG] (codacy-cli-v2/config/runtimes-installer.go:107) Using existing runtime download runtime=python version=3.11.11 downloadPath=/home/guita/.cache/codacy/runtimes/cpython-3.11.11+20250317-x86_64-unknown-linux-gnu-install_only.tar.gz
+2026-01-10T07:05:38-08:00 [DEBUG] (codacy-cli-v2/config/runtimes-installer.go:122) Extracting runtime fileName=cpython-3.11.11+20250317-x86_64-unknown-linux-gnu-install_only.tar.gz extractDirectory=/home/guita/.cache/codacy/runtimes runtime=python version=3.11.11
+2026-01-10T07:05:38-08:00 [ERROR] (codacy-cli-v2/utils/extract.go:100) Failed to extract archive error=EOF
+2026-01-10T07:05:38-08:00 [INFO] (codacy-cli-v2/cmd/analyze.go:353) Config file found for tool tool=trivy toolConfigPath=.codacy/tools-configs/trivy.yaml
+2026-01-10T07:05:39-08:00 [DEBUG] (codacy-cli-v2/config/runtimes-installer.go:107) Using existing runtime download runtime=dart version=3.7.2 downloadPath=/home/guita/.cache/codacy/runtimes/dartsdk-linux-x64-release.zip
+2026-01-10T07:05:39-08:00 [DEBUG] (codacy-cli-v2/config/runtimes-installer.go:122) Extracting runtime fileName=dartsdk-linux-x64-release.zip extractDirectory=/home/guita/.cache/codacy/runtimes runtime=dart version=3.7.2
+2026-01-10T07:05:39-08:00 [ERROR] (codacy-cli-v2/utils/extract.go:215) Failed to extract zip archive file=/home/guita/.cache/codacy/runtimes/dartsdk-linux-x64-release.zip error=zip: not a valid zip file
+2026-01-10T07:05:39-08:00 [DEBUG] (codacy-cli-v2/config/tools-installer.go:134) Installing runtime-based tool tool=eslint version=8.57.0 runtime=node
+2026-01-10T07:05:39-08:00 [DEBUG] (codacy-cli-v2/config/runtimes-installer.go:107) Using existing runtime download runtime=node version=22.2.0 downloadPath=/home/guita/.cache/codacy/runtimes/node-v22.2.0-linux-x64.tar.gz
+2026-01-10T07:05:39-08:00 [DEBUG] (codacy-cli-v2/config/runtimes-installer.go:122) Extracting runtime fileName=node-v22.2.0-linux-x64.tar.gz extractDirectory=/home/guita/.cache/codacy/runtimes runtime=node version=22.2.0
+2026-01-10T07:05:39-08:00 [ERROR] (codacy-cli-v2/utils/extract.go:100) Failed to extract archive error=EOF
+2026-01-10T07:05:39-08:00 [DEBUG] (codacy-cli-v2/config/tools-installer.go:125) Installing Python tool version=1.17.31 tool=lizard
+2026-01-10T07:05:39-08:00 [DEBUG] (codacy-cli-v2/config/tools-installer.go:334) Starting Python tool installation tool=lizard version=1.17.31
+2026-01-10T07:05:39-08:00 [DEBUG] (codacy-cli-v2/config/runtimes-installer.go:107) Using existing runtime download version=3.11.11 downloadPath=/home/guita/.cache/codacy/runtimes/cpython-3.11.11+20250317-x86_64-unknown-linux-gnu-install_only.tar.gz runtime=python
+2026-01-10T07:05:39-08:00 [DEBUG] (codacy-cli-v2/config/runtimes-installer.go:122) Extracting runtime runtime=python version=3.11.11 fileName=cpython-3.11.11+20250317-x86_64-unknown-linux-gnu-install_only.tar.gz extractDirectory=/home/guita/.cache/codacy/runtimes
+2026-01-10T07:05:39-08:00 [ERROR] (codacy-cli-v2/utils/extract.go:100) Failed to extract archive error=EOF
+2026-01-10T07:05:39-08:00 [DEBUG] (codacy-cli-v2/config/tools-installer.go:114) Installing download-based tool tool=pmd version=7.11.0 downloadURL=https://github.com/pmd/pmd/releases/download/pmd_releases%2F7.11.0/pmd-dist-7.11.0-bin.zip
+2026-01-10T07:05:39-08:00 [DEBUG] (codacy-cli-v2/config/tools-installer.go:280) Using existing tool download tool=pmd version=7.11.0 downloadPath=/home/guita/.cache/codacy/tools/pmd-dist-7.11.0-bin.zip
+2026-01-10T07:05:39-08:00 [DEBUG] (codacy-cli-v2/config/tools-installer.go:301) Extracting tool version=7.11.0 fileName=pmd-dist-7.11.0-bin.zip extractDirectory=/home/guita/.cache/codacy/tools/pmd@7.11.0 tool=pmd
+2026-01-10T07:05:39-08:00 [ERROR] (codacy-cli-v2/utils/extract.go:215) Failed to extract zip archive file=/home/guita/.cache/codacy/tools/pmd-dist-7.11.0-bin.zip error=zip: not a valid zip file
+2026-01-10T07:05:39-08:00 [DEBUG] (codacy-cli-v2/config/tools-installer.go:125) Installing Python tool tool=pylint version=3.3.6
+2026-01-10T07:05:39-08:00 [DEBUG] (codacy-cli-v2/config/tools-installer.go:334) Starting Python tool installation tool=pylint version=3.3.6
+2026-01-10T07:05:39-08:00 [DEBUG] (codacy-cli-v2/config/runtimes-installer.go:107) Using existing runtime download downloadPath=/home/guita/.cache/codacy/runtimes/cpython-3.11.11+20250317-x86_64-unknown-linux-gnu-install_only.tar.gz runtime=python version=3.11.11
+2026-01-10T07:05:39-08:00 [DEBUG] (codacy-cli-v2/config/runtimes-installer.go:122) Extracting runtime runtime=python version=3.11.11 fileName=cpython-3.11.11+20250317-x86_64-unknown-linux-gnu-install_only.tar.gz extractDirectory=/home/guita/.cache/codacy/runtimes
+2026-01-10T07:05:39-08:00 [ERROR] (codacy-cli-v2/utils/extract.go:100) Failed to extract archive error=EOF
+2026-01-10T07:05:39-08:00 [DEBUG] (codacy-cli-v2/config/tools-installer.go:134) Installing runtime-based tool version=1.7.0 runtime=go tool=revive
+2026-01-10T07:05:39-08:00 [DEBUG] (codacy-cli-v2/config/runtimes-installer.go:107) Using existing runtime download runtime=go version=1.22.3 downloadPath=/home/guita/.cache/codacy/runtimes/go1.22.3.linux-amd64.tar.gz
+2026-01-10T07:05:39-08:00 [DEBUG] (codacy-cli-v2/config/runtimes-installer.go:122) Extracting runtime runtime=go version=1.22.3 fileName=go1.22.3.linux-amd64.tar.gz extractDirectory=/home/guita/.cache/codacy/runtimes
+2026-01-10T07:05:39-08:00 [ERROR] (codacy-cli-v2/utils/extract.go:100) Failed to extract archive error=EOF
+2026-01-10T07:16:52-08:00 [INFO] (codacy-cli-v2/cli-v2.go:27) Starting Codacy CLI version=1.0.0-main.365.sha.cf4ddcc (cf4ddcc) built at 2025-12-15T14:45:31Z
+2026-01-10T07:16:52-08:00 [INFO] (codacy-cli-v2/cmd/root.go:34) Executing CLI command command=analyze full_command=[/home/guita/.cache/codacy/codacy-cli-v2/1.0.0-main.365.sha.cf4ddcc/codacy-cli-v2 analyze /mnt/c/Users/guita/AppData/Roaming/Code/User/mcp.json --format sarif] args=[/mnt/c/Users/guita/AppData/Roaming/Code/User/mcp.json]
+2026-01-10T07:16:52-08:00 [INFO] (codacy-cli-v2/cmd/analyze.go:353) Config file found for tool tool=trivy toolConfigPath=.codacy/tools-configs/trivy.yaml
+2026-01-10T07:18:07-08:00 [INFO] (codacy-cli-v2/cli-v2.go:27) Starting Codacy CLI version=1.0.0-main.365.sha.cf4ddcc (cf4ddcc) built at 2025-12-15T14:45:31Z
+2026-01-10T07:18:08-08:00 [INFO] (codacy-cli-v2/cmd/root.go:34) Executing CLI command command=analyze full_command=[/home/guita/.cache/codacy/codacy-cli-v2/1.0.0-main.365.sha.cf4ddcc/codacy-cli-v2 analyze /mnt/d/cache/QOLchain/examples/song.claim.signed.json --format sarif] args=[/mnt/d/cache/QOLchain/examples/song.claim.signed.json]
+2026-01-10T07:18:08-08:00 [INFO] (codacy-cli-v2/cmd/analyze.go:353) Config file found for tool tool=trivy toolConfigPath=.codacy/tools-configs/trivy.yaml
+2026-01-10T07:18:19-08:00 [INFO] (codacy-cli-v2/cli-v2.go:27) Starting Codacy CLI version=1.0.0-main.365.sha.cf4ddcc (cf4ddcc) built at 2025-12-15T14:45:31Z
+2026-01-10T07:18:19-08:00 [INFO] (codacy-cli-v2/cmd/root.go:34) Executing CLI command full_command=[/home/guita/.cache/codacy/codacy-cli-v2/1.0.0-main.365.sha.cf4ddcc/codacy-cli-v2 analyze /mnt/d/cache/QOLchain/qolchain/verify.py --format sarif] args=[/mnt/d/cache/QOLchain/qolchain/verify.py] command=analyze
+2026-01-10T07:18:19-08:00 [DEBUG] (codacy-cli-v2/config/tools-installer.go:125) Installing Python tool tool=lizard version=1.17.31
+2026-01-10T07:18:19-08:00 [DEBUG] (codacy-cli-v2/config/tools-installer.go:334) Starting Python tool installation tool=lizard version=1.17.31
+2026-01-10T07:18:19-08:00 [DEBUG] (codacy-cli-v2/config/runtimes-installer.go:107) Using existing runtime download runtime=python version=3.11.11 downloadPath=/home/guita/.cache/codacy/runtimes/cpython-3.11.11+20250317-x86_64-unknown-linux-gnu-install_only.tar.gz
+2026-01-10T07:18:19-08:00 [DEBUG] (codacy-cli-v2/config/runtimes-installer.go:122) Extracting runtime fileName=cpython-3.11.11+20250317-x86_64-unknown-linux-gnu-install_only.tar.gz extractDirectory=/home/guita/.cache/codacy/runtimes runtime=python version=3.11.11
+2026-01-10T07:18:19-08:00 [ERROR] (codacy-cli-v2/utils/extract.go:100) Failed to extract archive error=EOF
+2026-01-10T07:18:19-08:00 [DEBUG] (codacy-cli-v2/config/tools-installer.go:125) Installing Python tool version=3.3.6 tool=pylint
+2026-01-10T07:18:19-08:00 [DEBUG] (codacy-cli-v2/config/tools-installer.go:334) Starting Python tool installation tool=pylint version=3.3.6
+2026-01-10T07:18:19-08:00 [DEBUG] (codacy-cli-v2/config/runtimes-installer.go:107) Using existing runtime download runtime=python version=3.11.11 downloadPath=/home/guita/.cache/codacy/runtimes/cpython-3.11.11+20250317-x86_64-unknown-linux-gnu-install_only.tar.gz
+2026-01-10T07:18:19-08:00 [DEBUG] (codacy-cli-v2/config/runtimes-installer.go:122) Extracting runtime extractDirectory=/home/guita/.cache/codacy/runtimes runtime=python version=3.11.11 fileName=cpython-3.11.11+20250317-x86_64-unknown-linux-gnu-install_only.tar.gz
+2026-01-10T07:18:19-08:00 [ERROR] (codacy-cli-v2/utils/extract.go:100) Failed to extract archive error=EOF
+2026-01-10T07:18:19-08:00 [DEBUG] (codacy-cli-v2/config/tools-installer.go:125) Installing Python tool tool=semgrep version=1.78.0
+2026-01-10T07:18:19-08:00 [DEBUG] (codacy-cli-v2/config/tools-installer.go:334) Starting Python tool installation version=1.78.0 tool=semgrep
+2026-01-10T07:18:19-08:00 [DEBUG] (codacy-cli-v2/config/runtimes-installer.go:107) Using existing runtime download runtime=python version=3.11.11 downloadPath=/home/guita/.cache/codacy/runtimes/cpython-3.11.11+20250317-x86_64-unknown-linux-gnu-install_only.tar.gz
+2026-01-10T07:18:19-08:00 [DEBUG] (codacy-cli-v2/config/runtimes-installer.go:122) Extracting runtime runtime=python version=3.11.11 fileName=cpython-3.11.11+20250317-x86_64-unknown-linux-gnu-install_only.tar.gz extractDirectory=/home/guita/.cache/codacy/runtimes
+2026-01-10T07:18:19-08:00 [ERROR] (codacy-cli-v2/utils/extract.go:100) Failed to extract archive error=EOF
+2026-01-10T07:18:19-08:00 [INFO] (codacy-cli-v2/cmd/analyze.go:353) Config file found for tool toolConfigPath=.codacy/tools-configs/trivy.yaml tool=trivy
+2026-01-10T07:18:23-08:00 [INFO] (codacy-cli-v2/cli-v2.go:27) Starting Codacy CLI version=1.0.0-main.365.sha.cf4ddcc (cf4ddcc) built at 2025-12-15T14:45:31Z
+2026-01-10T07:18:23-08:00 [INFO] (codacy-cli-v2/cmd/root.go:34) Executing CLI command command=analyze full_command=[/home/guita/.cache/codacy/codacy-cli-v2/1.0.0-main.365.sha.cf4ddcc/codacy-cli-v2 analyze qolchain/verify.py --format sarif] args=[qolchain/verify.py]
+2026-01-10T07:18:23-08:00 [DEBUG] (codacy-cli-v2/config/tools-installer.go:125) Installing Python tool version=1.17.31 tool=lizard
+2026-01-10T07:18:23-08:00 [DEBUG] (codacy-cli-v2/config/tools-installer.go:334) Starting Python tool installation tool=lizard version=1.17.31
+2026-01-10T07:18:23-08:00 [DEBUG] (codacy-cli-v2/config/runtimes-installer.go:107) Using existing runtime download version=3.11.11 downloadPath=/home/guita/.cache/codacy/runtimes/cpython-3.11.11+20250317-x86_64-unknown-linux-gnu-install_only.tar.gz runtime=python
+2026-01-10T07:18:23-08:00 [DEBUG] (codacy-cli-v2/config/runtimes-installer.go:122) Extracting runtime runtime=python version=3.11.11 fileName=cpython-3.11.11+20250317-x86_64-unknown-linux-gnu-install_only.tar.gz extractDirectory=/home/guita/.cache/codacy/runtimes
+2026-01-10T07:18:23-08:00 [ERROR] (codacy-cli-v2/utils/extract.go:100) Failed to extract archive error=EOF
+2026-01-10T07:18:23-08:00 [DEBUG] (codacy-cli-v2/config/tools-installer.go:125) Installing Python tool tool=pylint version=3.3.6
+2026-01-10T07:18:23-08:00 [DEBUG] (codacy-cli-v2/config/tools-installer.go:334) Starting Python tool installation tool=pylint version=3.3.6
+2026-01-10T07:18:23-08:00 [DEBUG] (codacy-cli-v2/config/runtimes-installer.go:107) Using existing runtime download version=3.11.11 downloadPath=/home/guita/.cache/codacy/runtimes/cpython-3.11.11+20250317-x86_64-unknown-linux-gnu-install_only.tar.gz runtime=python
+2026-01-10T07:18:23-08:00 [DEBUG] (codacy-cli-v2/config/runtimes-installer.go:122) Extracting runtime runtime=python version=3.11.11 fileName=cpython-3.11.11+20250317-x86_64-unknown-linux-gnu-install_only.tar.gz extractDirectory=/home/guita/.cache/codacy/runtimes
+2026-01-10T07:18:23-08:00 [ERROR] (codacy-cli-v2/utils/extract.go:100) Failed to extract archive error=EOF
+2026-01-10T07:18:23-08:00 [DEBUG] (codacy-cli-v2/config/tools-installer.go:125) Installing Python tool tool=semgrep version=1.78.0
+2026-01-10T07:18:23-08:00 [DEBUG] (codacy-cli-v2/config/tools-installer.go:334) Starting Python tool installation tool=semgrep version=1.78.0
+2026-01-10T07:18:23-08:00 [DEBUG] (codacy-cli-v2/config/runtimes-installer.go:107) Using existing runtime download runtime=python version=3.11.11 downloadPath=/home/guita/.cache/codacy/runtimes/cpython-3.11.11+20250317-x86_64-unknown-linux-gnu-install_only.tar.gz
+2026-01-10T07:18:23-08:00 [DEBUG] (codacy-cli-v2/config/runtimes-installer.go:122) Extracting runtime runtime=python version=3.11.11 fileName=cpython-3.11.11+20250317-x86_64-unknown-linux-gnu-install_only.tar.gz extractDirectory=/home/guita/.cache/codacy/runtimes
+2026-01-10T07:18:23-08:00 [ERROR] (codacy-cli-v2/utils/extract.go:100) Failed to extract archive error=EOF
+2026-01-10T07:18:23-08:00 [INFO] (codacy-cli-v2/cmd/analyze.go:353) Config file found for tool tool=trivy toolConfigPath=.codacy/tools-configs/trivy.yaml
+2026-01-10T07:18:28-08:00 [INFO] (codacy-cli-v2/cli-v2.go:27) Starting Codacy CLI version=1.0.0-main.365.sha.cf4ddcc (cf4ddcc) built at 2025-12-15T14:45:31Z
+2026-01-10T07:18:29-08:00 [INFO] (codacy-cli-v2/cmd/root.go:34) Executing CLI command command=analyze full_command=[/home/guita/.cache/codacy/codacy-cli-v2/1.0.0-main.365.sha.cf4ddcc/codacy-cli-v2 analyze /mnt/d/cache/QOLchain/qolchain/verify.py --format sarif] args=[/mnt/d/cache/QOLchain/qolchain/verify.py]
+2026-01-10T07:18:29-08:00 [INFO] (codacy-cli-v2/cmd/analyze.go:353) Config file found for tool tool=trivy toolConfigPath=.codacy/tools-configs/trivy.yaml
+2026-01-10T07:18:29-08:00 [DEBUG] (codacy-cli-v2/config/tools-installer.go:125) Installing Python tool tool=lizard version=1.17.31
+2026-01-10T07:18:29-08:00 [DEBUG] (codacy-cli-v2/config/tools-installer.go:334) Starting Python tool installation tool=lizard version=1.17.31
+2026-01-10T07:18:29-08:00 [DEBUG] (codacy-cli-v2/config/runtimes-installer.go:107) Using existing runtime download downloadPath=/home/guita/.cache/codacy/runtimes/cpython-3.11.11+20250317-x86_64-unknown-linux-gnu-install_only.tar.gz runtime=python version=3.11.11
+2026-01-10T07:18:29-08:00 [DEBUG] (codacy-cli-v2/config/runtimes-installer.go:122) Extracting runtime runtime=python version=3.11.11 fileName=cpython-3.11.11+20250317-x86_64-unknown-linux-gnu-install_only.tar.gz extractDirectory=/home/guita/.cache/codacy/runtimes
+2026-01-10T07:18:29-08:00 [ERROR] (codacy-cli-v2/utils/extract.go:100) Failed to extract archive error=EOF
+2026-01-10T07:18:29-08:00 [DEBUG] (codacy-cli-v2/config/tools-installer.go:125) Installing Python tool tool=pylint version=3.3.6
+2026-01-10T07:18:29-08:00 [DEBUG] (codacy-cli-v2/config/tools-installer.go:334) Starting Python tool installation tool=pylint version=3.3.6
+2026-01-10T07:18:29-08:00 [DEBUG] (codacy-cli-v2/config/runtimes-installer.go:107) Using existing runtime download version=3.11.11 downloadPath=/home/guita/.cache/codacy/runtimes/cpython-3.11.11+20250317-x86_64-unknown-linux-gnu-install_only.tar.gz runtime=python
+2026-01-10T07:18:29-08:00 [DEBUG] (codacy-cli-v2/config/runtimes-installer.go:122) Extracting runtime version=3.11.11 fileName=cpython-3.11.11+20250317-x86_64-unknown-linux-gnu-install_only.tar.gz extractDirectory=/home/guita/.cache/codacy/runtimes runtime=python
+2026-01-10T07:18:29-08:00 [ERROR] (codacy-cli-v2/utils/extract.go:100) Failed to extract archive error=EOF
+2026-01-10T07:18:29-08:00 [DEBUG] (codacy-cli-v2/config/tools-installer.go:125) Installing Python tool tool=semgrep version=1.78.0
+2026-01-10T07:18:29-08:00 [DEBUG] (codacy-cli-v2/config/tools-installer.go:334) Starting Python tool installation tool=semgrep version=1.78.0
+2026-01-10T07:18:29-08:00 [DEBUG] (codacy-cli-v2/config/runtimes-installer.go:107) Using existing runtime download downloadPath=/home/guita/.cache/codacy/runtimes/cpython-3.11.11+20250317-x86_64-unknown-linux-gnu-install_only.tar.gz runtime=python version=3.11.11
+2026-01-10T07:18:29-08:00 [DEBUG] (codacy-cli-v2/config/runtimes-installer.go:122) Extracting runtime runtime=python version=3.11.11 fileName=cpython-3.11.11+20250317-x86_64-unknown-linux-gnu-install_only.tar.gz extractDirectory=/home/guita/.cache/codacy/runtimes
+2026-01-10T07:18:29-08:00 [ERROR] (codacy-cli-v2/utils/extract.go:100) Failed to extract archive error=EOF
+2026-01-10T07:18:56-08:00 [INFO] (codacy-cli-v2/cli-v2.go:27) Starting Codacy CLI version=1.0.0-main.365.sha.cf4ddcc (cf4ddcc) built at 2025-12-15T14:45:31Z
+2026-01-10T07:18:56-08:00 [INFO] (codacy-cli-v2/cmd/root.go:34) Executing CLI command full_command=[/home/guita/.cache/codacy/codacy-cli-v2/1.0.0-main.365.sha.cf4ddcc/codacy-cli-v2 analyze /mnt/d/cache/QOLchain/README.md --format sarif] args=[/mnt/d/cache/QOLchain/README.md] command=analyze
+2026-01-10T07:19:06-08:00 [INFO] (codacy-cli-v2/cli-v2.go:27) Starting Codacy CLI version=1.0.0-main.365.sha.cf4ddcc (cf4ddcc) built at 2025-12-15T14:45:31Z
+2026-01-10T07:19:07-08:00 [INFO] (codacy-cli-v2/cmd/root.go:34) Executing CLI command args=[/mnt/d/cache/QOLchain/main.py] command=analyze full_command=[/home/guita/.cache/codacy/codacy-cli-v2/1.0.0-main.365.sha.cf4ddcc/codacy-cli-v2 analyze /mnt/d/cache/QOLchain/main.py --format sarif]
+2026-01-10T07:19:07-08:00 [DEBUG] (codacy-cli-v2/config/tools-installer.go:125) Installing Python tool tool=lizard version=1.17.31
+2026-01-10T07:19:07-08:00 [DEBUG] (codacy-cli-v2/config/tools-installer.go:334) Starting Python tool installation version=1.17.31 tool=lizard
+2026-01-10T07:19:07-08:00 [DEBUG] (codacy-cli-v2/config/runtimes-installer.go:107) Using existing runtime download downloadPath=/home/guita/.cache/codacy/runtimes/cpython-3.11.11+20250317-x86_64-unknown-linux-gnu-install_only.tar.gz runtime=python version=3.11.11
+2026-01-10T07:19:07-08:00 [DEBUG] (codacy-cli-v2/config/runtimes-installer.go:122) Extracting runtime extractDirectory=/home/guita/.cache/codacy/runtimes runtime=python version=3.11.11 fileName=cpython-3.11.11+20250317-x86_64-unknown-linux-gnu-install_only.tar.gz
+2026-01-10T07:19:07-08:00 [ERROR] (codacy-cli-v2/utils/extract.go:100) Failed to extract archive error=EOF
+2026-01-10T07:19:07-08:00 [DEBUG] (codacy-cli-v2/config/tools-installer.go:125) Installing Python tool tool=pylint version=3.3.6
+2026-01-10T07:19:07-08:00 [DEBUG] (codacy-cli-v2/config/tools-installer.go:334) Starting Python tool installation tool=pylint version=3.3.6
+2026-01-10T07:19:07-08:00 [DEBUG] (codacy-cli-v2/config/runtimes-installer.go:107) Using existing runtime download runtime=python version=3.11.11 downloadPath=/home/guita/.cache/codacy/runtimes/cpython-3.11.11+20250317-x86_64-unknown-linux-gnu-install_only.tar.gz
+2026-01-10T07:19:07-08:00 [DEBUG] (codacy-cli-v2/config/runtimes-installer.go:122) Extracting runtime fileName=cpython-3.11.11+20250317-x86_64-unknown-linux-gnu-install_only.tar.gz extractDirectory=/home/guita/.cache/codacy/runtimes runtime=python version=3.11.11
+2026-01-10T07:19:07-08:00 [ERROR] (codacy-cli-v2/utils/extract.go:100) Failed to extract archive error=EOF
+2026-01-10T07:19:07-08:00 [DEBUG] (codacy-cli-v2/config/tools-installer.go:125) Installing Python tool tool=semgrep version=1.78.0
+2026-01-10T07:19:07-08:00 [DEBUG] (codacy-cli-v2/config/tools-installer.go:334) Starting Python tool installation tool=semgrep version=1.78.0
+2026-01-10T07:19:07-08:00 [DEBUG] (codacy-cli-v2/config/runtimes-installer.go:107) Using existing runtime download runtime=python version=3.11.11 downloadPath=/home/guita/.cache/codacy/runtimes/cpython-3.11.11+20250317-x86_64-unknown-linux-gnu-install_only.tar.gz
+2026-01-10T07:19:07-08:00 [DEBUG] (codacy-cli-v2/config/runtimes-installer.go:122) Extracting runtime version=3.11.11 fileName=cpython-3.11.11+20250317-x86_64-unknown-linux-gnu-install_only.tar.gz extractDirectory=/home/guita/.cache/codacy/runtimes runtime=python
+2026-01-10T07:19:07-08:00 [ERROR] (codacy-cli-v2/utils/extract.go:100) Failed to extract archive error=EOF
+2026-01-10T07:19:07-08:00 [INFO] (codacy-cli-v2/cmd/analyze.go:353) Config file found for tool tool=trivy toolConfigPath=.codacy/tools-configs/trivy.yaml
+2026-01-10T07:19:17-08:00 [INFO] (codacy-cli-v2/cli-v2.go:27) Starting Codacy CLI version=1.0.0-main.365.sha.cf4ddcc (cf4ddcc) built at 2025-12-15T14:45:31Z
+2026-01-10T07:19:17-08:00 [INFO] (codacy-cli-v2/cmd/root.go:34) Executing CLI command command=analyze full_command=[/home/guita/.cache/codacy/codacy-cli-v2/1.0.0-main.365.sha.cf4ddcc/codacy-cli-v2 analyze /mnt/d/cache/QOLchain/README.md --format sarif] args=[/mnt/d/cache/QOLchain/README.md]
+2026-01-10T07:19:21-08:00 [INFO] (codacy-cli-v2/cli-v2.go:27) Starting Codacy CLI version=1.0.0-main.365.sha.cf4ddcc (cf4ddcc) built at 2025-12-15T14:45:31Z
+2026-01-10T07:19:21-08:00 [INFO] (codacy-cli-v2/cmd/root.go:34) Executing CLI command full_command=[/home/guita/.cache/codacy/codacy-cli-v2/1.0.0-main.365.sha.cf4ddcc/codacy-cli-v2 analyze /mnt/d/cache/QOLchain/README.md --format sarif] args=[/mnt/d/cache/QOLchain/README.md] command=analyze
+2026-01-10T07:19:25-08:00 [INFO] (codacy-cli-v2/cli-v2.go:27) Starting Codacy CLI version=1.0.0-main.365.sha.cf4ddcc (cf4ddcc) built at 2025-12-15T14:45:31Z
+2026-01-10T07:19:25-08:00 [INFO] (codacy-cli-v2/cmd/root.go:34) Executing CLI command full_command=[/home/guita/.cache/codacy/codacy-cli-v2/1.0.0-main.365.sha.cf4ddcc/codacy-cli-v2 analyze /mnt/d/cache/QOLchain/README.md --format sarif] args=[/mnt/d/cache/QOLchain/README.md] command=analyze
+2026-01-10T07:19:27-08:00 [INFO] (codacy-cli-v2/cli-v2.go:27) Starting Codacy CLI version=1.0.0-main.365.sha.cf4ddcc (cf4ddcc) built at 2025-12-15T14:45:31Z
+2026-01-10T07:19:27-08:00 [INFO] (codacy-cli-v2/cmd/root.go:34) Executing CLI command full_command=[/home/guita/.cache/codacy/codacy-cli-v2/1.0.0-main.365.sha.cf4ddcc/codacy-cli-v2 analyze README.md --format sarif] args=[README.md] command=analyze
+2026-01-10T07:19:31-08:00 [INFO] (codacy-cli-v2/cli-v2.go:27) Starting Codacy CLI version=1.0.0-main.365.sha.cf4ddcc (cf4ddcc) built at 2025-12-15T14:45:31Z
+2026-01-10T07:19:31-08:00 [INFO] (codacy-cli-v2/cmd/root.go:34) Executing CLI command args=[/mnt/d/cache/QOLchain/README.md] command=analyze full_command=[/home/guita/.cache/codacy/codacy-cli-v2/1.0.0-main.365.sha.cf4ddcc/codacy-cli-v2 analyze /mnt/d/cache/QOLchain/README.md --format sarif]
+2026-01-10T07:19:38-08:00 [INFO] (codacy-cli-v2/cli-v2.go:27) Starting Codacy CLI version=1.0.0-main.365.sha.cf4ddcc (cf4ddcc) built at 2025-12-15T14:45:31Z
+2026-01-10T07:19:38-08:00 [INFO] (codacy-cli-v2/cmd/root.go:34) Executing CLI command command=analyze full_command=[/home/guita/.cache/codacy/codacy-cli-v2/1.0.0-main.365.sha.cf4ddcc/codacy-cli-v2 analyze /mnt/d/cache/QOLchain/.git/COMMIT_EDITMSG --format sarif] args=[/mnt/d/cache/QOLchain/.git/COMMIT_EDITMSG]
+2026-01-10T07:19:38-08:00 [DEBUG] (codacy-cli-v2/config/tools-installer.go:134) Installing runtime-based tool version=1.7.0 runtime=go tool=revive
+2026-01-10T07:19:38-08:00 [DEBUG] (codacy-cli-v2/config/runtimes-installer.go:107) Using existing runtime download downloadPath=/home/guita/.cache/codacy/runtimes/go1.22.3.linux-amd64.tar.gz runtime=go version=1.22.3
+2026-01-10T07:19:38-08:00 [DEBUG] (codacy-cli-v2/config/runtimes-installer.go:122) Extracting runtime runtime=go version=1.22.3 fileName=go1.22.3.linux-amd64.tar.gz extractDirectory=/home/guita/.cache/codacy/runtimes
+2026-01-10T07:19:38-08:00 [ERROR] (codacy-cli-v2/utils/extract.go:100) Failed to extract archive error=EOF
+2026-01-10T07:19:38-08:00 [DEBUG] (codacy-cli-v2/config/tools-installer.go:125) Installing Python tool tool=semgrep version=1.78.0
+2026-01-10T07:19:38-08:00 [DEBUG] (codacy-cli-v2/config/tools-installer.go:334) Starting Python tool installation tool=semgrep version=1.78.0
+2026-01-10T07:19:38-08:00 [DEBUG] (codacy-cli-v2/config/runtimes-installer.go:107) Using existing runtime download version=3.11.11 downloadPath=/home/guita/.cache/codacy/runtimes/cpython-3.11.11+20250317-x86_64-unknown-linux-gnu-install_only.tar.gz runtime=python
+2026-01-10T07:19:38-08:00 [DEBUG] (codacy-cli-v2/config/runtimes-installer.go:122) Extracting runtime extractDirectory=/home/guita/.cache/codacy/runtimes runtime=python version=3.11.11 fileName=cpython-3.11.11+20250317-x86_64-unknown-linux-gnu-install_only.tar.gz
+2026-01-10T07:19:38-08:00 [ERROR] (codacy-cli-v2/utils/extract.go:100) Failed to extract archive error=EOF
+2026-01-10T07:19:38-08:00 [INFO] (codacy-cli-v2/cmd/analyze.go:353) Config file found for tool tool=trivy toolConfigPath=.codacy/tools-configs/trivy.yaml
+2026-01-10T07:19:38-08:00 [DEBUG] (codacy-cli-v2/config/runtimes-installer.go:107) Using existing runtime download runtime=dart version=3.7.2 downloadPath=/home/guita/.cache/codacy/runtimes/dartsdk-linux-x64-release.zip
+2026-01-10T07:19:38-08:00 [DEBUG] (codacy-cli-v2/config/runtimes-installer.go:122) Extracting runtime version=3.7.2 fileName=dartsdk-linux-x64-release.zip extractDirectory=/home/guita/.cache/codacy/runtimes runtime=dart
+2026-01-10T07:19:38-08:00 [ERROR] (codacy-cli-v2/utils/extract.go:215) Failed to extract zip archive error=zip: not a valid zip file file=/home/guita/.cache/codacy/runtimes/dartsdk-linux-x64-release.zip
+2026-01-10T07:19:38-08:00 [DEBUG] (codacy-cli-v2/config/tools-installer.go:134) Installing runtime-based tool runtime=node tool=eslint version=8.57.0
+2026-01-10T07:19:38-08:00 [DEBUG] (codacy-cli-v2/config/runtimes-installer.go:107) Using existing runtime download downloadPath=/home/guita/.cache/codacy/runtimes/node-v22.2.0-linux-x64.tar.gz runtime=node version=22.2.0
+2026-01-10T07:19:38-08:00 [DEBUG] (codacy-cli-v2/config/runtimes-installer.go:122) Extracting runtime version=22.2.0 fileName=node-v22.2.0-linux-x64.tar.gz extractDirectory=/home/guita/.cache/codacy/runtimes runtime=node
+2026-01-10T07:19:38-08:00 [ERROR] (codacy-cli-v2/utils/extract.go:100) Failed to extract archive error=EOF
+2026-01-10T07:19:38-08:00 [DEBUG] (codacy-cli-v2/config/tools-installer.go:125) Installing Python tool tool=lizard version=1.17.31
+2026-01-10T07:19:38-08:00 [DEBUG] (codacy-cli-v2/config/tools-installer.go:334) Starting Python tool installation tool=lizard version=1.17.31
+2026-01-10T07:19:38-08:00 [DEBUG] (codacy-cli-v2/config/runtimes-installer.go:107) Using existing runtime download version=3.11.11 downloadPath=/home/guita/.cache/codacy/runtimes/cpython-3.11.11+20250317-x86_64-unknown-linux-gnu-install_only.tar.gz runtime=python
+2026-01-10T07:19:38-08:00 [DEBUG] (codacy-cli-v2/config/runtimes-installer.go:122) Extracting runtime runtime=python version=3.11.11 fileName=cpython-3.11.11+20250317-x86_64-unknown-linux-gnu-install_only.tar.gz extractDirectory=/home/guita/.cache/codacy/runtimes
+2026-01-10T07:19:38-08:00 [ERROR] (codacy-cli-v2/utils/extract.go:100) Failed to extract archive error=EOF
+2026-01-10T07:19:38-08:00 [DEBUG] (codacy-cli-v2/config/tools-installer.go:114) Installing download-based tool tool=pmd version=7.11.0 downloadURL=https://github.com/pmd/pmd/releases/download/pmd_releases%2F7.11.0/pmd-dist-7.11.0-bin.zip
+2026-01-10T07:19:38-08:00 [DEBUG] (codacy-cli-v2/config/tools-installer.go:280) Using existing tool download downloadPath=/home/guita/.cache/codacy/tools/pmd-dist-7.11.0-bin.zip tool=pmd version=7.11.0
+2026-01-10T07:19:38-08:00 [DEBUG] (codacy-cli-v2/config/tools-installer.go:301) Extracting tool tool=pmd version=7.11.0 fileName=pmd-dist-7.11.0-bin.zip extractDirectory=/home/guita/.cache/codacy/tools/pmd@7.11.0
+2026-01-10T07:19:38-08:00 [ERROR] (codacy-cli-v2/utils/extract.go:215) Failed to extract zip archive error=zip: not a valid zip file file=/home/guita/.cache/codacy/tools/pmd-dist-7.11.0-bin.zip
+2026-01-10T07:19:38-08:00 [DEBUG] (codacy-cli-v2/config/tools-installer.go:125) Installing Python tool tool=pylint version=3.3.6
+2026-01-10T07:19:38-08:00 [DEBUG] (codacy-cli-v2/config/tools-installer.go:334) Starting Python tool installation tool=pylint version=3.3.6
+2026-01-10T07:19:38-08:00 [DEBUG] (codacy-cli-v2/config/runtimes-installer.go:107) Using existing runtime download runtime=python version=3.11.11 downloadPath=/home/guita/.cache/codacy/runtimes/cpython-3.11.11+20250317-x86_64-unknown-linux-gnu-install_only.tar.gz
+2026-01-10T07:19:38-08:00 [DEBUG] (codacy-cli-v2/config/runtimes-installer.go:122) Extracting runtime fileName=cpython-3.11.11+20250317-x86_64-unknown-linux-gnu-install_only.tar.gz extractDirectory=/home/guita/.cache/codacy/runtimes runtime=python version=3.11.11
+2026-01-10T07:19:38-08:00 [ERROR] (codacy-cli-v2/utils/extract.go:100) Failed to extract archive error=EOF
+2026-01-10T07:20:15-08:00 [INFO] (codacy-cli-v2/cli-v2.go:27) Starting Codacy CLI version=1.0.0-main.365.sha.cf4ddcc (cf4ddcc) built at 2025-12-15T14:45:31Z
+2026-01-10T07:20:15-08:00 [INFO] (codacy-cli-v2/cmd/root.go:34) Executing CLI command args=[/mnt/d/cache/QOLchain/qolchain/__init__.py] command=analyze full_command=[/home/guita/.cache/codacy/codacy-cli-v2/1.0.0-main.365.sha.cf4ddcc/codacy-cli-v2 analyze /mnt/d/cache/QOLchain/qolchain/__init__.py --format sarif]
+2026-01-10T07:20:15-08:00 [DEBUG] (codacy-cli-v2/config/tools-installer.go:125) Installing Python tool version=1.17.31 tool=lizard
+2026-01-10T07:20:15-08:00 [DEBUG] (codacy-cli-v2/config/tools-installer.go:334) Starting Python tool installation version=1.17.31 tool=lizard
+2026-01-10T07:20:15-08:00 [DEBUG] (codacy-cli-v2/config/runtimes-installer.go:107) Using existing runtime download downloadPath=/home/guita/.cache/codacy/runtimes/cpython-3.11.11+20250317-x86_64-unknown-linux-gnu-install_only.tar.gz runtime=python version=3.11.11
+2026-01-10T07:20:15-08:00 [DEBUG] (codacy-cli-v2/config/runtimes-installer.go:122) Extracting runtime runtime=python version=3.11.11 fileName=cpython-3.11.11+20250317-x86_64-unknown-linux-gnu-install_only.tar.gz extractDirectory=/home/guita/.cache/codacy/runtimes
+2026-01-10T07:20:15-08:00 [ERROR] (codacy-cli-v2/utils/extract.go:100) Failed to extract archive error=EOF
+2026-01-10T07:20:15-08:00 [DEBUG] (codacy-cli-v2/config/tools-installer.go:125) Installing Python tool tool=pylint version=3.3.6
+2026-01-10T07:20:15-08:00 [DEBUG] (codacy-cli-v2/config/tools-installer.go:334) Starting Python tool installation tool=pylint version=3.3.6
+2026-01-10T07:20:15-08:00 [DEBUG] (codacy-cli-v2/config/runtimes-installer.go:107) Using existing runtime download downloadPath=/home/guita/.cache/codacy/runtimes/cpython-3.11.11+20250317-x86_64-unknown-linux-gnu-install_only.tar.gz runtime=python version=3.11.11
+2026-01-10T07:20:15-08:00 [DEBUG] (codacy-cli-v2/config/runtimes-installer.go:122) Extracting runtime extractDirectory=/home/guita/.cache/codacy/runtimes runtime=python version=3.11.11 fileName=cpython-3.11.11+20250317-x86_64-unknown-linux-gnu-install_only.tar.gz
+2026-01-10T07:20:15-08:00 [ERROR] (codacy-cli-v2/utils/extract.go:100) Failed to extract archive error=EOF
+2026-01-10T07:20:15-08:00 [DEBUG] (codacy-cli-v2/config/tools-installer.go:125) Installing Python tool version=1.78.0 tool=semgrep
+2026-01-10T07:20:15-08:00 [DEBUG] (codacy-cli-v2/config/tools-installer.go:334) Starting Python tool installation tool=semgrep version=1.78.0
+2026-01-10T07:20:15-08:00 [DEBUG] (codacy-cli-v2/config/runtimes-installer.go:107) Using existing runtime download runtime=python version=3.11.11 downloadPath=/home/guita/.cache/codacy/runtimes/cpython-3.11.11+20250317-x86_64-unknown-linux-gnu-install_only.tar.gz
+2026-01-10T07:20:15-08:00 [DEBUG] (codacy-cli-v2/config/runtimes-installer.go:122) Extracting runtime extractDirectory=/home/guita/.cache/codacy/runtimes runtime=python version=3.11.11 fileName=cpython-3.11.11+20250317-x86_64-unknown-linux-gnu-install_only.tar.gz
+2026-01-10T07:20:15-08:00 [ERROR] (codacy-cli-v2/utils/extract.go:100) Failed to extract archive error=EOF
+2026-01-10T07:20:15-08:00 [INFO] (codacy-cli-v2/cmd/analyze.go:353) Config file found for tool toolConfigPath=.codacy/tools-configs/trivy.yaml tool=trivy
+2026-01-10T07:28:13-08:00 [INFO] (codacy-cli-v2/cli-v2.go:27) Starting Codacy CLI version=1.0.0-main.365.sha.cf4ddcc (cf4ddcc) built at 2025-12-15T14:45:31Z
+2026-01-10T07:28:13-08:00 [INFO] (codacy-cli-v2/cmd/root.go:34) Executing CLI command command=analyze full_command=[/home/guita/.cache/codacy/codacy-cli-v2/1.0.0-main.365.sha.cf4ddcc/codacy-cli-v2 analyze /mnt/d/cache/QOLchain/qolchain/canonical.py --format sarif] args=[/mnt/d/cache/QOLchain/qolchain/canonical.py]
+2026-01-10T07:28:13-08:00 [DEBUG] (codacy-cli-v2/config/tools-installer.go:125) Installing Python tool version=3.3.6 tool=pylint
+2026-01-10T07:28:13-08:00 [DEBUG] (codacy-cli-v2/config/tools-installer.go:334) Starting Python tool installation tool=pylint version=3.3.6
+2026-01-10T07:28:13-08:00 [DEBUG] (codacy-cli-v2/config/runtimes-installer.go:107) Using existing runtime download runtime=python version=3.11.11 downloadPath=/home/guita/.cache/codacy/runtimes/cpython-3.11.11+20250317-x86_64-unknown-linux-gnu-install_only.tar.gz
+2026-01-10T07:28:13-08:00 [DEBUG] (codacy-cli-v2/config/runtimes-installer.go:122) Extracting runtime version=3.11.11 fileName=cpython-3.11.11+20250317-x86_64-unknown-linux-gnu-install_only.tar.gz extractDirectory=/home/guita/.cache/codacy/runtimes runtime=python
+2026-01-10T07:28:13-08:00 [ERROR] (codacy-cli-v2/utils/extract.go:100) Failed to extract archive error=EOF
+2026-01-10T07:28:13-08:00 [DEBUG] (codacy-cli-v2/config/tools-installer.go:125) Installing Python tool tool=semgrep version=1.78.0
+2026-01-10T07:28:13-08:00 [DEBUG] (codacy-cli-v2/config/tools-installer.go:334) Starting Python tool installation tool=semgrep version=1.78.0
+2026-01-10T07:28:13-08:00 [DEBUG] (codacy-cli-v2/config/runtimes-installer.go:107) Using existing runtime download runtime=python version=3.11.11 downloadPath=/home/guita/.cache/codacy/runtimes/cpython-3.11.11+20250317-x86_64-unknown-linux-gnu-install_only.tar.gz
+2026-01-10T07:28:13-08:00 [DEBUG] (codacy-cli-v2/config/runtimes-installer.go:122) Extracting runtime extractDirectory=/home/guita/.cache/codacy/runtimes runtime=python version=3.11.11 fileName=cpython-3.11.11+20250317-x86_64-unknown-linux-gnu-install_only.tar.gz
+2026-01-10T07:28:13-08:00 [ERROR] (codacy-cli-v2/utils/extract.go:100) Failed to extract archive error=EOF
+2026-01-10T07:28:13-08:00 [INFO] (codacy-cli-v2/cmd/analyze.go:353) Config file found for tool toolConfigPath=.codacy/tools-configs/trivy.yaml tool=trivy
+2026-01-10T07:28:13-08:00 [DEBUG] (codacy-cli-v2/config/tools-installer.go:125) Installing Python tool tool=lizard version=1.17.31
+2026-01-10T07:28:13-08:00 [DEBUG] (codacy-cli-v2/config/tools-installer.go:334) Starting Python tool installation tool=lizard version=1.17.31
+2026-01-10T07:28:13-08:00 [DEBUG] (codacy-cli-v2/config/runtimes-installer.go:107) Using existing runtime download runtime=python version=3.11.11 downloadPath=/home/guita/.cache/codacy/runtimes/cpython-3.11.11+20250317-x86_64-unknown-linux-gnu-install_only.tar.gz
+2026-01-10T07:28:13-08:00 [DEBUG] (codacy-cli-v2/config/runtimes-installer.go:122) Extracting runtime runtime=python version=3.11.11 fileName=cpython-3.11.11+20250317-x86_64-unknown-linux-gnu-install_only.tar.gz extractDirectory=/home/guita/.cache/codacy/runtimes
+2026-01-10T07:28:13-08:00 [ERROR] (codacy-cli-v2/utils/extract.go:100) Failed to extract archive error=EOF
+2026-01-10T07:28:20-08:00 [INFO] (codacy-cli-v2/cli-v2.go:27) Starting Codacy CLI version=1.0.0-main.365.sha.cf4ddcc (cf4ddcc) built at 2025-12-15T14:45:31Z
+2026-01-10T07:28:21-08:00 [INFO] (codacy-cli-v2/cmd/root.go:34) Executing CLI command command=analyze full_command=[/home/guita/.cache/codacy/codacy-cli-v2/1.0.0-main.365.sha.cf4ddcc/codacy-cli-v2 analyze /mnt/d/cache/QOLchain/claim.json --format sarif] args=[/mnt/d/cache/QOLchain/claim.json]
+2026-01-10T07:28:21-08:00 [INFO] (codacy-cli-v2/cmd/analyze.go:353) Config file found for tool toolConfigPath=.codacy/tools-configs/trivy.yaml tool=trivy
+2026-01-10T07:28:25-08:00 [INFO] (codacy-cli-v2/cli-v2.go:27) Starting Codacy CLI version=1.0.0-main.365.sha.cf4ddcc (cf4ddcc) built at 2025-12-15T14:45:31Z
+2026-01-10T07:28:26-08:00 [INFO] (codacy-cli-v2/cmd/root.go:34) Executing CLI command full_command=[/home/guita/.cache/codacy/codacy-cli-v2/1.0.0-main.365.sha.cf4ddcc/codacy-cli-v2 analyze /mnt/d/cache/QOLchain/foundation.md --format sarif] args=[/mnt/d/cache/QOLchain/foundation.md] command=analyze
+2026-01-10T07:28:32-08:00 [INFO] (codacy-cli-v2/cli-v2.go:27) Starting Codacy CLI version=1.0.0-main.365.sha.cf4ddcc (cf4ddcc) built at 2025-12-15T14:45:31Z
+2026-01-10T07:28:33-08:00 [INFO] (codacy-cli-v2/cmd/root.go:34) Executing CLI command command=analyze full_command=[/home/guita/.cache/codacy/codacy-cli-v2/1.0.0-main.365.sha.cf4ddcc/codacy-cli-v2 analyze /mnt/d/cache/QOLchain/ruleset.md --format sarif] args=[/mnt/d/cache/QOLchain/ruleset.md]
+2026-01-10T07:28:35-08:00 [INFO] (codacy-cli-v2/cli-v2.go:27) Starting Codacy CLI version=1.0.0-main.365.sha.cf4ddcc (cf4ddcc) built at 2025-12-15T14:45:31Z
+2026-01-10T07:28:35-08:00 [INFO] (codacy-cli-v2/cmd/root.go:34) Executing CLI command command=analyze full_command=[/home/guita/.cache/codacy/codacy-cli-v2/1.0.0-main.365.sha.cf4ddcc/codacy-cli-v2 analyze /mnt/d/cache/QOLchain/qol_license.md --format sarif] args=[/mnt/d/cache/QOLchain/qol_license.md]
+2026-01-10T07:28:46-08:00 [INFO] (codacy-cli-v2/cli-v2.go:27) Starting Codacy CLI version=1.0.0-main.365.sha.cf4ddcc (cf4ddcc) built at 2025-12-15T14:45:31Z
+2026-01-10T07:28:47-08:00 [INFO] (codacy-cli-v2/cmd/root.go:34) Executing CLI command full_command=[/home/guita/.cache/codacy/codacy-cli-v2/1.0.0-main.365.sha.cf4ddcc/codacy-cli-v2 analyze /mnt/d/cache/QOLchain/manifesto.md --format sarif] args=[/mnt/d/cache/QOLchain/manifesto.md] command=analyze
+2026-01-10T07:28:50-08:00 [INFO] (codacy-cli-v2/cli-v2.go:27) Starting Codacy CLI version=1.0.0-main.365.sha.cf4ddcc (cf4ddcc) built at 2025-12-15T14:45:31Z
+2026-01-10T07:28:50-08:00 [INFO] (codacy-cli-v2/cmd/root.go:34) Executing CLI command full_command=[/home/guita/.cache/codacy/codacy-cli-v2/1.0.0-main.365.sha.cf4ddcc/codacy-cli-v2 analyze /mnt/d/cache/QOLchain/main.py --format sarif] args=[/mnt/d/cache/QOLchain/main.py] command=analyze
+2026-01-10T07:28:50-08:00 [DEBUG] (codacy-cli-v2/config/tools-installer.go:125) Installing Python tool version=1.17.31 tool=lizard
+2026-01-10T07:28:50-08:00 [DEBUG] (codacy-cli-v2/config/tools-installer.go:334) Starting Python tool installation tool=lizard version=1.17.31
+2026-01-10T07:28:50-08:00 [DEBUG] (codacy-cli-v2/config/runtimes-installer.go:107) Using existing runtime download version=3.11.11 downloadPath=/home/guita/.cache/codacy/runtimes/cpython-3.11.11+20250317-x86_64-unknown-linux-gnu-install_only.tar.gz runtime=python
+2026-01-10T07:28:50-08:00 [DEBUG] (codacy-cli-v2/config/runtimes-installer.go:122) Extracting runtime extractDirectory=/home/guita/.cache/codacy/runtimes runtime=python version=3.11.11 fileName=cpython-3.11.11+20250317-x86_64-unknown-linux-gnu-install_only.tar.gz
+2026-01-10T07:28:50-08:00 [ERROR] (codacy-cli-v2/utils/extract.go:100) Failed to extract archive error=EOF
+2026-01-10T07:28:50-08:00 [DEBUG] (codacy-cli-v2/config/tools-installer.go:125) Installing Python tool tool=pylint version=3.3.6
+2026-01-10T07:28:50-08:00 [DEBUG] (codacy-cli-v2/config/tools-installer.go:334) Starting Python tool installation tool=pylint version=3.3.6
+2026-01-10T07:28:50-08:00 [DEBUG] (codacy-cli-v2/config/runtimes-installer.go:107) Using existing runtime download downloadPath=/home/guita/.cache/codacy/runtimes/cpython-3.11.11+20250317-x86_64-unknown-linux-gnu-install_only.tar.gz runtime=python version=3.11.11
+2026-01-10T07:28:50-08:00 [DEBUG] (codacy-cli-v2/config/runtimes-installer.go:122) Extracting runtime version=3.11.11 fileName=cpython-3.11.11+20250317-x86_64-unknown-linux-gnu-install_only.tar.gz extractDirectory=/home/guita/.cache/codacy/runtimes runtime=python
+2026-01-10T07:28:50-08:00 [ERROR] (codacy-cli-v2/utils/extract.go:100) Failed to extract archive error=EOF
+2026-01-10T07:28:50-08:00 [DEBUG] (codacy-cli-v2/config/tools-installer.go:125) Installing Python tool tool=semgrep version=1.78.0
+2026-01-10T07:28:50-08:00 [DEBUG] (codacy-cli-v2/config/tools-installer.go:334) Starting Python tool installation tool=semgrep version=1.78.0
+2026-01-10T07:28:50-08:00 [DEBUG] (codacy-cli-v2/config/runtimes-installer.go:107) Using existing runtime download runtime=python version=3.11.11 downloadPath=/home/guita/.cache/codacy/runtimes/cpython-3.11.11+20250317-x86_64-unknown-linux-gnu-install_only.tar.gz
+2026-01-10T07:28:50-08:00 [DEBUG] (codacy-cli-v2/config/runtimes-installer.go:122) Extracting runtime runtime=python version=3.11.11 fileName=cpython-3.11.11+20250317-x86_64-unknown-linux-gnu-install_only.tar.gz extractDirectory=/home/guita/.cache/codacy/runtimes
+2026-01-10T07:28:50-08:00 [ERROR] (codacy-cli-v2/utils/extract.go:100) Failed to extract archive error=EOF
+2026-01-10T07:28:50-08:00 [INFO] (codacy-cli-v2/cmd/analyze.go:353) Config file found for tool tool=trivy toolConfigPath=.codacy/tools-configs/trivy.yaml
+2026-01-10T07:28:53-08:00 [INFO] (codacy-cli-v2/cli-v2.go:27) Starting Codacy CLI version=1.0.0-main.365.sha.cf4ddcc (cf4ddcc) built at 2025-12-15T14:45:31Z
+2026-01-10T07:28:53-08:00 [INFO] (codacy-cli-v2/cmd/root.go:34) Executing CLI command args=[/mnt/d/cache/QOLchain/foundation.md] command=analyze full_command=[/home/guita/.cache/codacy/codacy-cli-v2/1.0.0-main.365.sha.cf4ddcc/codacy-cli-v2 analyze /mnt/d/cache/QOLchain/foundation.md --format sarif]
+2026-01-10T07:28:59-08:00 [INFO] (codacy-cli-v2/cli-v2.go:27) Starting Codacy CLI version=1.0.0-main.365.sha.cf4ddcc (cf4ddcc) built at 2025-12-15T14:45:31Z
+2026-01-10T07:28:59-08:00 [INFO] (codacy-cli-v2/cmd/root.go:34) Executing CLI command command=analyze full_command=[/home/guita/.cache/codacy/codacy-cli-v2/1.0.0-main.365.sha.cf4ddcc/codacy-cli-v2 analyze /mnt/d/cache/QOLchain/spec/canonicalization.md --format sarif] args=[/mnt/d/cache/QOLchain/spec/canonicalization.md]
+2026-01-10T07:29:03-08:00 [INFO] (codacy-cli-v2/cli-v2.go:27) Starting Codacy CLI version=1.0.0-main.365.sha.cf4ddcc (cf4ddcc) built at 2025-12-15T14:45:31Z
+2026-01-10T07:29:03-08:00 [INFO] (codacy-cli-v2/cmd/root.go:34) Executing CLI command args=[/mnt/d/cache/QOLchain/examples/song.claim.json] command=analyze full_command=[/home/guita/.cache/codacy/codacy-cli-v2/1.0.0-main.365.sha.cf4ddcc/codacy-cli-v2 analyze /mnt/d/cache/QOLchain/examples/song.claim.json --format sarif]
+2026-01-10T07:29:03-08:00 [INFO] (codacy-cli-v2/cmd/analyze.go:353) Config file found for tool toolConfigPath=.codacy/tools-configs/trivy.yaml tool=trivy
+2026-01-10T07:29:11-08:00 [INFO] (codacy-cli-v2/cli-v2.go:27) Starting Codacy CLI version=1.0.0-main.365.sha.cf4ddcc (cf4ddcc) built at 2025-12-15T14:45:31Z
+2026-01-10T07:29:11-08:00 [INFO] (codacy-cli-v2/cmd/root.go:34) Executing CLI command full_command=[/home/guita/.cache/codacy/codacy-cli-v2/1.0.0-main.365.sha.cf4ddcc/codacy-cli-v2 analyze /mnt/d/cache/QOLchain/contracts/QOLClaimNFT.sol --format sarif] args=[/mnt/d/cache/QOLchain/contracts/QOLClaimNFT.sol] command=analyze
+2026-01-10T07:29:29-08:00 [INFO] (codacy-cli-v2/cli-v2.go:27) Starting Codacy CLI version=1.0.0-main.365.sha.cf4ddcc (cf4ddcc) built at 2025-12-15T14:45:31Z
+2026-01-10T07:29:29-08:00 [INFO] (codacy-cli-v2/cmd/root.go:34) Executing CLI command command=analyze full_command=[/home/guita/.cache/codacy/codacy-cli-v2/1.0.0-main.365.sha.cf4ddcc/codacy-cli-v2 analyze /mnt/d/cache/QOLchain/ledger.json --format sarif] args=[/mnt/d/cache/QOLchain/ledger.json]
+2026-01-10T07:29:29-08:00 [INFO] (codacy-cli-v2/cmd/analyze.go:353) Config file found for tool tool=trivy toolConfigPath=.codacy/tools-configs/trivy.yaml

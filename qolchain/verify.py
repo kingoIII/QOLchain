@@ -19,12 +19,22 @@ def verify(claim):
     """
     # Signed-wrapper: {"claim_file": "path/to/claim.json", "claim_hash": "0x...", ...}
     if isinstance(claim, dict) and 'claim_file' in claim and 'claim_hash' in claim:
-        path = claim['claim_file']
-        if not os.path.isabs(path):
-            path = os.path.join(os.getcwd(), path)
-        try:
-            c = json.load(open(path))
-        except Exception:
+        rel = claim['claim_file']
+        candidates = []
+        if os.path.isabs(rel):
+            candidates.append(rel)
+        else:
+            candidates.append(os.path.join(os.getcwd(), rel))
+            candidates.append(os.path.join(os.getcwd(), 'examples', rel))
+            candidates.append(rel)
+        c = None
+        for p in candidates:
+            try:
+                c = json.load(open(p))
+                break
+            except Exception:
+                continue
+        if c is None:
             return False
         h = hash_claim(c)
         return _normalize_hex(h) == _normalize_hex(claim['claim_hash'])
