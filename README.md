@@ -1,8 +1,3 @@
-<<<<<<< HEAD
-![alt text](image.png)
-=======
-
->>>>>>> 9d55c3f5b5b5367b2616a826e91b9711258fa39c
 # QOLchain (Scaffold)
 
 This repository contains a lightweight scaffold for a QOL (Quality of Life) claim system.
@@ -11,13 +6,14 @@ Structure:
 - `spec/` — JSON Schema and documentation for claims, canonicalization, signatures, and verification
   - `versioning.md`, `canonicalization.md`, `signature.md`, `verification.md`
 - `examples/` — canonical claim examples and detached signature containers (e.g. `song.claim.json`, `song.claim.signed.json`)
-- `contracts/` — Solidity contracts: `QOLAnchor`, `QOLClaimNFT`, `QOLSubToken`
-- `scripts/` — helper scripts to create, sign, anchor and mint NFT for claims
+- `contracts/` — Solidity contracts: `QOLAnchor`, `QOLClaimNFT`, `QOLSubToken` (optional; used for Ethereum anchoring)
+- `qolchain/` — Python core: canonicalization, verification and anchoring helpers
+- `main.py` — entrypoint and simple CLI for creating, signing, anchoring and exporting claims (Python replaces previous TS scripts)
 
 Next steps:
-1. Add tests and a deployment script.
-2. Wire up OpenZeppelin dependencies in `package.json` and `hardhat`/`foundry` config.
-3. Implement canonicalization utilities and reference implementations for detached signatures.
+1. Add tests and a deployment script for Python workflows (unit tests for canonicalization and verification).
+2. Ensure `main.py` and `qolchain/` provide canonicalization, signing, anchoring, and verification flows in Python.
+3. (Optional) Wire up OpenZeppelin dependencies in `package.json` and `hardhat`/`foundry` if you plan to develop and deploy Solidity contracts.
 4. Create separate schema files for other entity types when needed (e.g. `claim.album.schema.json`).
 =======
 QOLChain
