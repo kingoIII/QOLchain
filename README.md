@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 ![alt text](image.png)
+=======
+
+>>>>>>> 9d55c3f5b5b5367b2616a826e91b9711258fa39c
 # QOLchain (Scaffold)
 
 This repository contains a lightweight scaffold for a QOL (Quality of Life) claim system.
