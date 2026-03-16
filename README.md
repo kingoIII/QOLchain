@@ -1,150 +1,129 @@
-# QOLchain (Scaffold)
+# QOLChain
 
-This repository contains a lightweight scaffold for a QOL (Quality of Life) claim system.
+QOLChain is an in-progress system for making authorship, provenance, licensing, and related claims about digital works explicit, structured, and verifiable.
 
-Structure:
-- `spec/` — JSON Schema and documentation for claims, canonicalization, signatures, and verification
-  - `versioning.md`, `canonicalization.md`, `signature.md`, `verification.md`
-- `examples/` — canonical claim examples and detached signature containers (e.g. `song.claim.json`, `song.claim.signed.json`)
-- `contracts/` — Solidity contracts: `QOLAnchor`, `QOLClaimNFT`, `QOLSubToken` (optional; used for Ethereum anchoring)
-- `qolchain/` — Python core: canonicalization, verification and anchoring helpers
-- `main.py` — entrypoint and simple CLI for creating, signing, anchoring and exporting claims (Python replaces previous TS scripts)
+This repository is not presented as a finished production release. It is a working project space that documents the direction, architecture, prototype components, and underlying logic of QOLChain as it is being developed.
 
-Next steps:
-1. Add tests and a deployment script for Python workflows (unit tests for canonicalization and verification).
-2. Ensure `main.py` and `qolchain/` provide canonicalization, signing, anchoring, and verification flows in Python.
-3. (Optional) Wire up OpenZeppelin dependencies in `package.json` and `hardhat`/`foundry` if you plan to develop and deploy Solidity contracts.
-4. Create separate schema files for other entity types when needed (e.g. `claim.album.schema.json`).
-=======
-QOLChain
-Institutional Overview
+The goal is not to create another vague platform promise. The goal is to build a clearer and more auditable way to represent creative claims in a digital environment where ownership, attribution, context, and rights are often fragmented, disputed, or reduced to weak metadata.
 
-QOLChain is an open, institutional-grade standard for making claims about digital content, data, models, and processes explicit, verifiable, and auditable.
+## What QOLChain is
 
-It is not a platform, a marketplace, or a blockchain application.
-It is a neutral verification layer designed to be used by other systems.
+QOLChain is a structured claim system.
 
-Its purpose is to reduce ambiguity, prevent disputes, and enable trust between parties that do not know or trust each other by default.
+It is being designed to support things like:
 
----
+- authorship claims
+- licensing context
+- provenance records
+- verification logic
+- cryptographic signing
+- optional anchoring to public chains
+- auditable records for digital works and related entities
 
-Problem Statement
+The broader idea is to create a framework where claims are not just said, but expressed in a form that can be checked, traced, and reasoned about.
 
-In the current digital environment:
+## What QOLChain is not
+
+QOLChain is not currently a finished consumer product.
+
+It is not a polished app, not a complete marketplace, and not a production-ready protocol release.
+
+This repository is primarily a public working blueprint. It shows the current state of the project, the system direction, and the pieces being shaped around that direction.
+
+## Why this exists
+
+The current digital environment handles creative ownership and attribution poorly.
 
 Authorship is often unclear.
-Licensing terms are fragmented or unverifiable.
-Datasets and AI models lack reliable provenance.
-Disputes rely on informal trust, private contracts, or manual review.
+Licensing is inconsistent.
+Context gets lost.
+Verification is weak.
+Disputes usually depend on platforms, screenshots, private records, or informal trust.
 
-These conditions do not scale and fail under institutional, legal, or automated scrutiny.
+That is not enough for an internet where digital creation, AI-generated material, remixing, collaboration, datasets, and automated systems keep increasing in scale.
 
----
+QOLChain exists because a stronger claim structure is needed.
 
-What QOLChain Does
+## Current repository purpose
 
-QOLChain provides a standard way to:
+This repository exists to document and prototype the system as it evolves.
 
-Define explicit, structured claims (authorship, license, provenance, compliance, quality).
-Cryptographically sign those claims.
-Validate them using public, deterministic rules.
-Escalate unresolved cases to formal human arbitration when automation is insufficient.
+It currently functions as a development and presentation space for:
 
-Every step is auditable. Nothing relies on implicit trust.
+- schemas
+- examples
+- claim structures
+- verification logic
+- anchoring concepts
+- supporting documentation
+- institutional and conceptual direction
 
----
+Some parts are technical prototypes.
+Some parts are design documents.
+Some parts are structural groundwork for what the system may become.
 
-Core Principle
+## Repository structure
 
-QOLChain does not ask anyone to “trust the system.”
+### `spec/`
+Specifications and supporting documentation for how claims, canonicalization, signatures, and verification are being modeled.
 
-It ensures that trust can be examined, verified, challenged, and resolved.
+### `examples/`
+Example claim objects and signed claim formats used to demonstrate how the system may represent real cases.
 
-Anything that cannot be made explicit cannot be reliably automated or arbitrated.
+### `contracts/`
+Solidity contract prototypes related to Ethereum anchoring and optional on-chain components.
 
----
+### `qolchain/`
+Python-based implementation work for canonicalization, verification, anchoring helpers, and related logic.
 
-How It Works (High Level)
+### `main.py`
+A simple entry point for working with prototype claim flows.
 
-An entity exists: a work, dataset, model, organization, or process.
+### Root documents
+Files such as `foundation.md`, `manifesto.md`, `ruleset.md`, `qol_license.md`, and related materials reflect the broader conceptual, legal, and structural thinking around the project.
 
-One or more parties make structured claims about that entity, such as ownership, licensing rights, or compliance with specific rules.
+## Current development status
 
-Those claims are signed using verifiable identities.
+QOLChain is still under active development.
 
-Validators apply publicly defined rulesets and produce one of three outcomes:
-Valid, Invalid, or Indeterminate.
+The repository contains meaningful structure and prototype work, but it should be understood as an evolving system rather than a complete release.
 
-Indeterminate cases are escalated to institutional arbitration, producing a signed resolution that becomes part of the record.
+Some components are exploratory.
+Some are foundational.
+Some may be revised, replaced, or expanded as the project matures.
 
----
+## Direction
 
-What QOLChain Is Not
+QOLChain is moving toward a system that can make digital claims more explicit, verifiable, and usable across creative, technical, and institutional settings.
 
-QOLChain is not a social network.
-It is not a marketplace.
-It is not a token economy.
-It does not impose a single moral or legal framework.
+That includes the long-term possibility of supporting:
 
-All norms, ethics, and policies are defined externally through versioned rulesets.
+- creators
+- collaborative works
+- licensing flows
+- AI and dataset provenance
+- structured authorship records
+- dispute review and verification processes
+- interoperable claim standards
 
----
+The exact final form is still being developed.
 
-Cryptography and Blockchain
+## Public visibility and project boundaries
 
-QOLChain uses cryptography for integrity and accountability:
-Digital signatures, hashes, and verifiable identities.
+This is a public repository, but it should not be mistaken for a finished open collaborative project in the usual sense.
 
-Blockchain technology is optional and non-essential.
-It may be used only as an anchoring mechanism for timestamps or immutability.
+The project is still being shaped directly by its creator and is being shared publicly to show the work, direction, and architecture in progress.
 
-The protocol remains fully functional without any blockchain dependency.
+Some technical elements may rely on open standards or open technologies, but QOLChain itself is not being presented here as a finalized open-source community product.
 
----
+## Discussion and contact
 
-Key Components
+If you are interested in the concept, architecture, standards direction, or future development of QOLChain, you can open an issue or reach out for discussion.
 
-Entities: identifiable objects, actors, or processes.
-Claims: structured assertions about entities.
-Attestations: cryptographically signed claims.
-Rulesets: versioned validation criteria.
-Validators: deterministic rule executors.
-Arbitration: institutional resolution for edge cases.
+That does not mean the project is open for unrestricted contribution or public governance at this stage. It means discussion is possible while the system is still evolving.
 
-All components are versioned and permanently verifiable.
+## Status note
 
----
+QOLChain is being built in public, but it is still becoming what it is.
 
-Use Cases
-
-Institutional content attribution and certification.
-Dataset and AI training provenance audits.
-Cross-platform licensing verification.
-Structured dispute resolution.
-Interoperable trust between independent systems.
-
----
-
-Governance and Stewardship
-
-QOLChain is stewarded by the QOLChain Foundation.
-
-The Foundation:
-Maintains the canonical standard and specifications.
-Protects the integrity and continuity of the protocol.
-Coordinates arbitration and governance processes.
-Prevents fragmentation, capture, or protocol drift.
-
-The protocol is designed to survive any single organization.
-Institutional stewardship ensures legitimacy and continuity.
-
----
-
-Status
-
-QOLChain is under active development.
-
-The specification prioritizes long-term stability, backward verifiability, and institutional robustness over rapid iteration.
-
-The goal is durability, not hype.
->>>>>>> 7049d8bb4fecd8c90f00813398383cfd9734fc55
+This repository should be read as a live body of work: part specification, part prototype, part institutional design, and part foundation for a larger system still under construction.
